@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111b2a"><title>삼국지 군웅전기 · 15전 시제품</title>
+<style>
+:root{--bg:#101725;--surface:#192638;--surface2:#233249;--stroke:#39475b;--ink:#f3f5f5;--mute:#afbbc9;--gold:#f2cc78;--green:#60c5a2;--blue:#8abaff;--red:#ed9b8b;--radius:15px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% -12%,#2a3f52,transparent 49%),var(--bg);color:var(--ink);font-family:system-ui,-apple-system,'Malgun Gothic','Apple SD Gothic Neo',sans-serif;font-size:16px;line-height:1.55}button{font:inherit;cursor:pointer;color:inherit;border:1px solid var(--stroke);background:var(--surface2);border-radius:10px;padding:11px 16px;font-weight:750}button:hover:not(:disabled){border-color:var(--gold);filter:brightness(1.09)}button:disabled{cursor:not-allowed;opacity:.42}button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}button.accent{background:#f2cd81;color:#1c2632;border-color:#f2cd81}button.accent:disabled{background:#6b675c;color:#d2ced0;border-color:#6b675c}button.ghost{background:transparent}button.full{width:100%}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(30px,4vw,54px);line-height:1.25;letter-spacing:-1px}h2{font-size:26px}h3{font-size:19px;margin:0}small{font-size:11px}main{max-width:1300px;margin:0 auto;padding:18px 22px 65px}.topbar{padding:13px max(22px,calc((100% - 1300px)/2 + 22px));border-bottom:1px solid var(--stroke);display:flex;align-items:center;justify-content:space-between;gap:18px;background:rgba(15,25,37,.85)}.brand{display:flex;align-items:center;gap:11px}.brand-mark{background:#f3cd7b;color:#2b2d30;font-family:serif;border-radius:9px;font-weight:900;padding:8px 7px;font-size:20px}.brand strong{display:block;font-size:20px}.brand small{display:block;color:var(--mute)}.blank-label{min-height:14px;display:block}.blank-block,.blank-copy,.blank-title{color:transparent}.blank-block{display:block;min-height:16px}.blank-copy{min-height:24px}.blank-title{min-height:140px}.topstats{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.topstats span{background:#2b3a4a;border-radius:8px;padding:5px 10px;font-weight:750}.start-screen{min-height:75vh;display:grid;place-items:center}.start-box{max-width:780px;width:100%;padding:36px;background:linear-gradient(135deg,#1d3041,#141f30);border:1px solid #4d5a6b;border-radius:22px;text-align:center}.start-box>p{color:#c1d0d7;max-width:570px;margin-left:auto;margin-right:auto}.start-box h2{font-size:17px;margin-top:35px}.eyebrow{font-size:11px;color:var(--gold);letter-spacing:1.8px;font-weight:900}.faction-choices{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}.faction-choice{display:flex;flex-direction:column;align-items:center;min-height:160px;justify-content:center;gap:3px}.faction-choice span{font-family:serif;font-size:50px;line-height:1.1}.faction-choice strong{font-size:22px}.faction-choice small{color:var(--mute)}.shu{background:linear-gradient(155deg,#1c5544,#233749)}.wei{background:linear-gradient(155deg,#3c5390,#253249)}.wu{background:linear-gradient(155deg,#6a4145,#263343)}.hint{font-size:13px;color:var(--mute);line-height:1.6}.mainnav{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:18px}.mainnav button.active{border-color:var(--gold);color:var(--gold);background:#313342}.mainnav button:last-child{margin-left:auto}.page-title{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:18px}.page-title.compact{margin-bottom:12px}.page-title h2{margin:0}.page-title p{margin:4px 0 0;color:var(--mute);font-size:14px}.flex-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.panel{background:rgba(27,40,58,.92);border:1px solid var(--stroke);border-radius:var(--radius);padding:22px}.camp-layout{display:grid;grid-template-columns:minmax(0,1.14fr) minmax(0,.86fr);gap:18px;margin-bottom:18px}.panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}.panel-head span{color:var(--gold);font-weight:800}.lane-label{display:flex;justify-content:space-between;color:#f0b19d;font-weight:750;font-size:14px;margin-bottom:9px}.lane-label.rear{color:#a8ccfb;margin-top:15px}.lane-label span{font-size:11px;font-weight:450;color:var(--mute)}.formation-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.formation-slot{border:2px dashed #4f5967;min-height:154px;background:rgba(255,255,255,.025);padding:0;overflow:hidden;position:relative}.formation-slot.on{border-style:solid;border-color:#7b8c9d}.formation-slot.focus{border-color:var(--gold);box-shadow:0 0 0 2px #b68e43aa}.formation-slot.drop-target{border-color:#8abaff;background:rgba(138,186,255,.08)}.formation-slot.empty{font-size:13px;color:#95a4b3}.formation-slot.empty strong{display:block;font-size:34px}.formation-slot .slot-no{position:absolute;top:5px;left:8px;font-size:11px;color:var(--mute)}.formation-slot .mini-name{font-size:18px;font-weight:800;display:block;margin-top:8px}.panel-foot{margin:8px 0 0;min-height:0}.roster-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.hero-card{min-width:0;border:1px solid #536076;padding:10px;background:#263447;display:flex;flex-direction:column;align-items:center;gap:8px;position:relative;min-height:166px;justify-content:center}.hero-card.active{outline:2px solid var(--gold);outline-offset:0}.hero-card.dragging{opacity:.55}.hero-card .hero-face,.formation-slot .hero-face{width:100%;max-width:120px;aspect-ratio:4/3;background:radial-gradient(circle at 40% 26%,#6f8e8c,transparent 80%),#303e52;border-radius:10px;display:grid;place-items:center;font-family:serif;font-size:32px;font-weight:900;color:#fff;line-height:1.1}.hero-face[data-faction=shu]{background:linear-gradient(145deg,#315c4d,#1a3040)}.hero-face[data-faction=wei]{background:linear-gradient(145deg,#3c5481,#1a3040)}.hero-face[data-faction=wu]{background:linear-gradient(145deg,#7b5352,#1a3040)}.hero-card strong{font-size:18px}.hero-card small{display:none}.hero-card .deployed{display:none}.details-panel{margin-top:15px}.empty-text{text-align:center;color:var(--mute);padding:45px 10px;margin:0}.touch-guide{margin:8px 0 0;color:var(--gold);font-size:13px;font-weight:700}.detail-head{display:flex;gap:16px;align-items:center;margin-bottom:18px}.detail-head .hero-face{font-size:38px;width:80px;height:90px;border-radius:10px;display:grid;place-items:center;font-family:serif}.detail-head h3{font-size:23px;margin:0}.stat-chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 0}.stat-chip{padding:3px 9px;background:#29384b;border-radius:6px;font-size:12px}.skill-summary{font-size:13px;color:var(--mute)}.skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.skill-card{background:#182638;border:1px solid #41516a;border-radius:12px;padding:14px}.skill-card.selected{border:2px solid #f2cc78;padding:13px}.skill-top{display:flex;justify-content:space-between;align-items:start;gap:8px}.skill-top strong{font-size:16px}.skill-top small{display:block;color:var(--mute)}.skill-desc{min-height:52px;color:#d8e3ef;font-size:13px;margin:9px 0}.skill-level{display:flex;gap:4px;align-items:center}.skill-level i{width:21px;height:9px;background:#3e4d61;border-radius:2px}.skill-level i.filled{background:#e3c37b}.skill-buttons{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center;margin-top:12px}.skill-buttons button{padding:7px 10px;font-size:13px}.skill-buttons .selected-button{background:#525337;color:#f7e9bf}.skill-foot{border-top:1px solid #37465b;margin-top:15px;padding-top:12px;display:flex;gap:13px;flex-wrap:wrap;align-items:center}.skill-foot strong{color:var(--gold)}.camp-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:15px 0}.treasures{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.treasures strong{font-size:14px}.treasure-pill{display:inline-block;padding:4px 9px;background:#45432f;color:#f5da8e;border-radius:7px;font-size:12px}.map-route{max-width:850px;margin:auto;display:flex;flex-direction:column;gap:12px}.map-row{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:stretch;gap:10px;position:relative}.map-row:before{content:'┊';position:absolute;top:-17px;left:50%;color:#7a8897}.map-node{min-height:77px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px}.map-node strong{font-size:15px}.map-node small{color:#b9c6d0}.map-node.done{background:#253f37;border-color:#457462;opacity:.72}.map-node.current{background:#554b35;border:2px solid var(--gold)}.map-node.locked{opacity:.36}.map-node.optional{background:#2d3344}.map-chapter{font-size:11px;color:var(--gold);font-weight:bold;margin-bottom:3px}.battle-panel{max-width:960px;margin:0 auto 16px}.battle-heading{font-size:17px;font-weight:bold;display:flex;justify-content:space-between;margin:7px 0;color:#a9cef4}.battle-heading.enemy-text{color:#efa79a}.battle-units{display:flex;flex-wrap:wrap;gap:10px;min-height:117px;align-items:center;justify-content:center}.battle-unit{width:132px;min-height:112px;background:#2a384b;border:1px solid #50617b;border-radius:10px;padding:9px;text-align:center}.battle-unit.dead{opacity:.3;filter:grayscale(1)}.battle-unit .name{font-size:15px;font-weight:800}.battle-unit .role{font-size:11px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bar{height:9px;background:#414e5d;overflow:hidden;border-radius:9px;margin:8px 0 3px}.bar span{height:100%;background:#6ac69f;display:block;transition:width .13s}.battle-unit.enemy .bar span{background:#e48e81}.battle-unit .hp{font-size:11px;color:#c6d1d9}.battle-center{text-align:center;padding:13px;margin:14px 0;border-top:1px solid #485365;border-bottom:1px solid #485365;display:flex;align-items:center;justify-content:center;gap:19px}.battle-center span{font-variant-numeric:tabular-nums;font-weight:900;font-size:23px;color:var(--gold)}.battle-log{max-width:960px;margin:0 auto 15px}.battle-log h3{margin-bottom:8px}.battle-log #battle-log{height:148px;overflow-y:auto;font-size:13px;line-height:1.6;color:#dbe2eb}.log-line{border-bottom:1px solid #2d3e53;padding:3px 0}.battle-log .good{color:#a5eac9}.battle-log .bad{color:#f0b3a5}#battle-footer{text-align:center;margin:12px 0}#battle-footer button{min-width:240px;padding:15px}.modal-root:not([hidden]){display:grid;place-items:center;position:fixed;inset:0;z-index:1000}.modal-shade{position:absolute;inset:0;background:rgba(0,0,0,.75)}.modal-box{position:relative;width:min(92vw,680px);max-height:86vh;overflow:auto;background:#1b293d;border:1px solid #728096;border-radius:17px;padding:20px;box-shadow:0 18px 60px #0008}.modal-top{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #405066;padding-bottom:10px}.modal-top h2{margin:0;font-size:22px}.icon-button{padding:6px 10px;background:none}.modal-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:15px 0}.recruit-card{padding:12px 8px;background:#26374d;border:1px solid #51627e;border-radius:10px;text-align:center;min-width:0}.recruit-card .hero-face{font-family:serif;font-size:43px;margin:auto auto 8px;display:grid;place-items:center;border-radius:9px;max-width:110px;height:105px}.recruit-card strong{display:block;font-size:18px}.recruit-card .recruit-details{font-size:12px;color:#d1dbe7;min-height:54px;margin:8px 0}.recruit-card button{width:100%;padding:9px 5px}.modal-footer-actions{display:flex;gap:9px;justify-content:flex-end;flex-wrap:wrap;padding-top:10px}.modal-note{font-size:13px;color:var(--mute)}.rules-list{line-height:1.85;color:#d0dce5}.toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,20px);z-index:2500;background:#f2cc78;color:#253044;border-radius:9px;padding:10px 16px;font-weight:bold;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:830px){main{padding:13px 10px 36px}.topbar{padding:10px 12px;flex-wrap:wrap}.camp-layout{grid-template-columns:1fr}.roster-grid{grid-template-columns:repeat(3,1fr)}.panel{padding:14px}.formation-slot{min-height:126px}.page-title{align-items:flex-start;flex-direction:column}.mainnav button{padding:9px 12px}.skill-grid{grid-template-columns:1fr}.start-box{padding:25px 12px}.battle-unit{width:106px}}@media(max-width:490px){.faction-choice{min-height:140px;padding:7px 3px}.faction-choice span{font-size:34px}.brand strong{font-size:17px}.brand small{font-size:10px}.topstats span{font-size:12px}.roster-grid{gap:8px;grid-template-columns:repeat(2,1fr)}.formation-grid{gap:7px}.hero-card{padding:8px;min-height:142px}.hero-card strong{font-size:16px}.formation-slot .mini-name{font-size:15px}.map-node{min-height:73px;padding:7px 2px}.map-node strong{font-size:12px}.map-node small{font-size:10px}.battle-unit{width:88px;padding:5px}.battle-unit .name{font-size:12px}.battle-unit .hp{font-size:10px}.modal-choices{gap:5px}.recruit-card{padding:7px 3px}.recruit-card strong{font-size:14px}.recruit-card .hero-face{font-size:31px;height:80px}.recruit-card .recruit-details{font-size:10px}.recruit-card button{font-size:12px}}
+[hidden]{display:none!important}
+/* 선택 가능한 카드와 기술 버튼은 낮은 해상도에서도 터치 크기를 유지한다. */
+.skill-buttons button,.modal-choices button{min-height:37px}
+
+.skill-value{font-size:12px;font-weight:800;color:var(--gold);margin:-2px 0 11px}
+
+/* v1.2: 메뉴/진형/장수 상세 팝업 */
+.start-screen [hidden]{display:none!important}
+.start-screen{min-height:calc(100vh - 100px)}
+.start-menu{max-width:550px;display:flex;flex-direction:column;gap:20px;padding:66px 60px}
+.start-action{width:100%;min-height:78px;font-size:27px;border-radius:15px}
+.faction-menu{max-width:790px;padding:45px}
+.faction-menu h2{font-size:30px;margin:0 0 26px;text-align:center}
+.faction-menu .faction-choices{margin:0 0 23px;gap:18px}
+.faction-menu .faction-choice{min-height:185px}
+.faction-back{min-width:110px;font-size:16px}
+.roster-grid .empty-roster{grid-column:1/-1;min-height:160px;display:grid;place-items:center;color:var(--mute);border:1px dashed var(--stroke);border-radius:12px;font-weight:650}
+.formation-slot[draggable=true],.hero-card[draggable=true]{cursor:grab}
+.formation-slot.dragging,.hero-card.dragging{opacity:.55}
+.formation-slot.drop-target{border-color:var(--gold);background:rgba(242,204,120,.11)}
+.formation-slot.focus{border-color:var(--gold)}
+.hero-card.tap-selected{outline:3px solid var(--gold);outline-offset:-3px}
+.hero-card .hero-more{position:absolute;right:5px;top:5px;border:1px solid rgba(200,211,229,.35);border-radius:50%;width:30px;height:30px;display:grid;place-items:center;background:#142235;color:#e9f2ff;font-size:19px;line-height:1;z-index:2;padding:0}
+.roster-panel .roster-grid{align-content:start}
+.modal-box.hero-detail-modal{width:min(95vw,930px);max-height:90vh;padding:22px 24px}
+.hero-popup-head{display:flex;align-items:center;gap:15px;margin:17px 0 14px}
+.hero-popup-head .hero-face{display:grid;place-items:center;aspect-ratio:1;width:75px;min-width:75px;border-radius:11px;font:900 38px/1.2 serif}
+.hero-popup-identity{display:flex;flex-direction:column;gap:3px}
+.hero-popup-identity strong{font-size:24px}
+.hero-popup-stats{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+.hero-popup-stats span{padding:6px 11px;border-radius:8px;background:var(--surface2);font-size:14px}
+.hero-popup-budget{margin-left:auto;font-size:14px;color:var(--gold);font-weight:800;text-align:right;white-space:nowrap}
+.hero-skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.hero-skill{border:1px solid var(--stroke);background:#152438;border-radius:13px;padding:15px;display:flex;flex-direction:column;gap:10px}
+.hero-skill.active-skill{border-color:var(--gold);box-shadow:0 0 0 1px rgba(242,204,120,.35)}
+.hero-skill-top{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.hero-skill-name{font-size:19px;font-weight:800}
+.hero-skill-level{background:var(--surface2);padding:3px 9px;border-radius:8px;white-space:nowrap;font-weight:850;font-size:13px}
+.hero-skill-line{display:flex;justify-content:space-between;gap:12px;align-items:baseline;border-bottom:1px solid rgba(195,211,229,.13);padding-bottom:6px}
+.hero-skill-line span:first-child{color:#b5c4d4;font-size:14px;white-space:nowrap}
+.hero-skill-line strong{font-size:15px;text-align:right;font-weight:800}
+.hero-skill-effect{min-height:57px;font-size:14px;line-height:1.48;color:#d9e8f4}
+.hero-skill-actions{display:flex;gap:7px;margin-top:auto;flex-wrap:wrap}
+.hero-skill-actions button{flex:1;min-width:80px;padding:9px 9px;font-size:14px}
+.hero-skill-actions .is-active{background:#746539;color:#fff2bf;border-color:#dcb96b}
+.hero-popup-footer{display:flex;align-items:center;gap:10px;justify-content:space-between;flex-wrap:wrap;margin-top:14px;padding-top:12px;border-top:1px solid var(--stroke)}
+.hero-popup-footer .actions{display:flex;flex-wrap:wrap;gap:8px}
+.hero-popup-footer button{padding:10px 14px}
+.upgrade-box{display:grid;grid-template-columns:1fr 36px 1fr;align-items:stretch;gap:10px;margin:15px 0 18px}
+.upgrade-side{padding:16px;background:#1b2d42;border:1px solid var(--stroke);border-radius:13px}
+.upgrade-side.new{border-color:var(--gold);background:#2b3545}
+.upgrade-side h3{font-size:18px;margin:0 0 12px}
+.upgrade-side p{font-size:14px;color:#d3dfed;margin:8px 0}
+.upgrade-side strong{color:#f2cc78}
+.upgrade-arrow{display:grid;place-items:center;font-size:27px;color:var(--gold)}
+.upgrade-price{text-align:center;font-size:20px;font-weight:850;color:var(--gold);margin:12px 0}
+.upgrade-price small{display:block;font-size:13px;color:var(--mute)}
+@media(max-width:830px){.hero-skills{grid-template-columns:1fr}.modal-box.hero-detail-modal{max-height:92vh}.hero-skill-effect{min-height:0}.start-menu{padding:42px 22px}.start-action{min-height:72px;font-size:24px}}
+@media(max-width:490px){.faction-menu{padding:22px 13px}.faction-menu h2{font-size:25px}.faction-menu .faction-choices{gap:7px}.faction-menu .faction-choice{min-height:137px}.start-action{min-height:70px}.hero-popup-head{gap:10px}.hero-popup-head .hero-face{width:58px;min-width:58px;font-size:30px}.hero-popup-identity strong{font-size:20px}.hero-popup-budget{font-size:12px}.hero-popup-stats span{font-size:12px;padding:4px 8px}.modal-box.hero-detail-modal{padding:13px}.hero-skill{padding:12px}.hero-skill-actions button{font-size:13px}.upgrade-box{grid-template-columns:1fr;gap:5px}.upgrade-arrow{transform:rotate(90deg)}.upgrade-side{padding:12px}}
+/* 숨긴 시작 화면·진영 선택·팝업이 다른 display 지정으로 노출되지 않도록 */
+[hidden]{display:none!important}
+
+.hero-effect-label{display:inline-block;margin-right:10px;color:#e6c476;font-weight:800;font-size:13px}
+
+</style></head><body>
+<header class="topbar"><div class="brand"><span class="brand-mark">三國</span><div><strong>군웅전기</strong><small class="blank-label" id="brand-subtitle">&nbsp;</small></div></div><div class="topstats" id="topstats"></div></header>
+<main>
+<section id="start-screen" class="start-screen">
+  <div class="start-box start-menu" id="start-menu">
+    <button class="accent start-action" onclick="showFactionSelection()">새로하기</button>
+    <button class="ghost start-action" id="continue-button" onclick="continueRun()" disabled>이어하기</button>
+  </div>
+  <div class="start-box faction-menu" id="faction-menu" hidden>
+    <h2>진영 선택</h2>
+    <div class="faction-choices">
+      <button class="faction-choice shu" onclick="beginRun('shu')"><span>蜀</span><strong>촉</strong></button>
+      <button class="faction-choice wei" onclick="beginRun('wei')"><span>魏</span><strong>위</strong></button>
+      <button class="faction-choice wu" onclick="beginRun('wu')"><span>吳</span><strong>오</strong></button>
+    </div>
+    <button class="ghost faction-back" onclick="showStartMenu()">뒤로</button>
+  </div>
+</section>
+<section id="game-content" hidden>
+ <nav class="mainnav"><button id="tab-camp" onclick="switchTab('camp')">장수 편성</button><button id="tab-map" onclick="switchTab('map')">출정 지도</button><button id="tab-battle" onclick="switchTab('battle')" disabled>자동 전투</button></nav>
+ <div id="camp-page" class="page">
+   <div class="page-title compact"><div><h2>장수 편성</h2></div><div class="flex-actions"><button class="accent" id="recruit-btn" onclick="openRecruit()">재야탐색</button><button class="ghost" onclick="switchTab('map')">지도로 이동 →</button></div></div>
+   <div class="camp-layout"><section class="panel formation-panel"><div class="panel-head"><h3>전투 진형</h3><span id="deploy-counter">0 / 5명</span></div><div class="lane-label">전열</div><div class="formation-grid" id="front-slots"></div><div class="lane-label rear">후열</div><div class="formation-grid" id="rear-slots"></div><div class="hint panel-foot" id="formation-hint"></div></section>
+   <section class="panel roster-panel"><div class="panel-head"><h3>보유 장수</h3><span id="roster-counter">0 / 8명</span></div><div id="roster-grid" class="roster-grid"></div></section></div>
+   <div class="camp-bottom"><div class="treasures"><strong>보유 보물</strong><div id="treasure-pills"></div></div><button class="ghost" onclick="resetRunPrompt()">새 출정 시작</button></div>
+ </div>
+ <div id="map-page" class="page" hidden><div class="page-title"><div><span class="eyebrow">CAMPAIGN</span><h2>출정 지도</h2><p>전투를 진행하면 다음 단계가 열립니다. 옆길의 사건·보물·의원·상점은 선택적으로 방문할 수 있습니다.</p></div><button class="ghost" onclick="switchTab('camp')">← 편성으로</button></div><div id="map-route" class="map-route"></div></div>
+ <div id="battle-page" class="page" hidden><div class="page-title"><div><span class="eyebrow">AUTO BATTLE</span><h2 id="battle-title">전투</h2><p id="battle-description">기술은 자동으로 발동합니다. 직접 공격 대상을 선택할 수 없습니다.</p></div><div class="flex-actions"><button id="speed-button" class="ghost" onclick="cycleSpeed()">속도 ×1</button></div></div><div class="panel battle-panel"><div class="battle-heading enemy-text">적군 <span id="enemy-count"></span></div><div id="battle-enemy" class="battle-units"></div><div class="battle-center"><span id="battle-clock">00:00</span><strong id="battle-status">자동 전투</strong></div><div id="battle-player" class="battle-units"></div><div class="battle-heading">아군 <span id="ally-count"></span></div></div><div class="panel battle-log"><h3>전투 기록</h3><div id="battle-log"></div></div><div id="battle-footer"></div></div>
+</section>
+</main>
+<div id="modal-root" class="modal-root" hidden><div class="modal-shade" onclick="closeModal()"></div><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-top"><h2 id="modal-title"></h2><button class="icon-button" aria-label="닫기" onclick="closeModal()">✕</button></div><div id="modal-body"></div><div id="modal-footer"></div></section></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+// v20.1 rawDB에서 추출한 장수 기본 능력치 21명 (등급·원본 특성 제외)
+const HERO_STATS = {"유비":{"faction":"shu","cmd":75,"force":73,"intel":74,"pol":78,"hp":150,"hit":0,"dodge":0,"cooldown":5},"관우":{"faction":"shu","cmd":95,"force":97,"intel":75,"pol":62,"hp":200,"hit":0,"dodge":0,"cooldown":4},"장비":{"faction":"shu","cmd":85,"force":98,"intel":30,"pol":22,"hp":230,"hit":0,"dodge":0,"cooldown":4},"조운":{"faction":"shu","cmd":91,"force":96,"intel":76,"pol":65,"hp":180,"hit":0,"dodge":0,"cooldown":2},"제갈량":{"faction":"shu","cmd":92,"force":38,"intel":100,"pol":95,"hp":160,"hit":0,"dodge":0,"cooldown":3},"마초":{"faction":"shu","cmd":88,"force":97,"intel":44,"pol":26,"hp":180,"hit":0,"dodge":0,"cooldown":4},"황충":{"faction":"shu","cmd":86,"force":93,"intel":60,"pol":52,"hp":180,"hit":0,"dodge":0,"cooldown":3},"조조":{"faction":"wei","cmd":96,"force":72,"intel":91,"pol":94,"hp":200,"hit":0,"dodge":0,"cooldown":3},"하후돈":{"faction":"wei","cmd":89,"force":90,"intel":58,"pol":70,"hp":180,"hit":0,"dodge":0,"cooldown":4},"장료":{"faction":"wei","cmd":93,"force":92,"intel":78,"pol":58,"hp":200,"hit":0,"dodge":0,"cooldown":3},"전위":{"faction":"wei","cmd":56,"force":95,"intel":35,"pol":29,"hp":230,"hit":0,"dodge":0,"cooldown":6},"허저":{"faction":"wei","cmd":65,"force":96,"intel":36,"pol":20,"hp":230,"hit":0,"dodge":0,"cooldown":6},"사마의":{"faction":"wei","cmd":98,"force":63,"intel":96,"pol":93,"hp":160,"hit":0,"dodge":0,"cooldown":3},"순욱":{"faction":"wei","cmd":52,"force":14,"intel":95,"pol":98,"hp":130,"hit":0,"dodge":0,"cooldown":4},"손권":{"faction":"wu","cmd":76,"force":67,"intel":80,"pol":89,"hp":200,"hit":0,"dodge":0,"cooldown":5},"손책":{"faction":"wu","cmd":92,"force":92,"intel":69,"pol":70,"hp":150,"hit":0,"dodge":0,"cooldown":3},"주유":{"faction":"wu","cmd":97,"force":71,"intel":96,"pol":86,"hp":150,"hit":0,"dodge":0,"cooldown":3},"감녕":{"faction":"wu","cmd":86,"force":94,"intel":76,"pol":18,"hp":200,"hit":0,"dodge":0,"cooldown":3},"태사자":{"faction":"wu","cmd":82,"force":93,"intel":66,"pol":58,"hp":170,"hit":0,"dodge":0,"cooldown":3},"황개":{"faction":"wu","cmd":79,"force":83,"intel":65,"pol":65,"hp":150,"hit":0,"dodge":0,"cooldown":4},"육손":{"faction":"wu","cmd":96,"force":69,"intel":95,"pol":87,"hp":160,"hit":0,"dodge":0,"cooldown":4}};
+// v20.1 enemy-v15-data.js에서 추출한 1~15라운드 적군 배치/능력치/기술
+const ENCOUNTERS = {"1":[{"name":"황건적 졸개","cmd":50,"force":65,"intel":25,"pol":0,"hp":76,"dodge":0,"hit":0,"cooldown":9.2,"skillName":"황건난격","skillType":"물리","skillRange":"enemy_single","skillPower":18,"skillAcc":100,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 18, 명중 100%).","tier":"D","slot":1,"effects":[]},{"name":"황건적 졸개","cmd":50,"force":65,"intel":25,"pol":0,"hp":76,"dodge":0,"hit":0,"cooldown":9.2,"skillName":"황건난격","skillType":"물리","skillRange":"enemy_single","skillPower":18,"skillAcc":100,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 18, 명중 100%).","tier":"D","slot":2,"effects":[]}],"2":[{"name":"황건적 졸개","cmd":50,"force":65,"intel":25,"pol":0,"hp":77,"dodge":0,"hit":0,"cooldown":9.2,"skillName":"황건난격","skillType":"물리","skillRange":"enemy_single","skillPower":18.04,"skillAcc":100,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 18, 명중 100%).","tier":"D","slot":1,"effects":[]},{"name":"황건적 졸개","cmd":50,"force":65,"intel":25,"pol":0,"hp":77,"dodge":0,"hit":0,"cooldown":9.2,"skillName":"황건난격","skillType":"물리","skillRange":"enemy_single","skillPower":18.04,"skillAcc":100,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 18, 명중 100%).","tier":"D","slot":2,"effects":[]},{"name":"관해","cmd":70,"force":82,"intel":10,"pol":5,"hp":94,"dodge":0,"hit":0,"cooldown":9.11,"skillName":"광도돌진","skillType":"물리","skillRange":"enemy_single","skillPower":28.06,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 28, 명중 90%) 적중 시 적중 대상 통솔 -8(5초).","tier":"C","slot":3,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"cmd","delta":-8,"duration":5}]}],"3":[{"name":"황건적 졸개","cmd":50,"force":65,"intel":25,"pol":0,"hp":78,"dodge":0,"hit":0,"cooldown":9.2,"skillName":"황건난격","skillType":"물리","skillRange":"enemy_single","skillPower":18.07,"skillAcc":100,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 18, 명중 100%).","tier":"D","slot":1,"effects":[]},{"name":"유벽","cmd":70,"force":72,"intel":47,"pol":34,"hp":95,"dodge":0,"hit":0,"cooldown":9.2,"skillName":"유격수비","skillType":"물리","skillRange":"enemy_single","skillPower":22.09,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 22, 명중 90%) 사용 후 자신 통솔 +6(5초).","tier":"C","slot":2,"effects":[{"phase":"use","type":"stat","who":"self","stat":"cmd","delta":6,"duration":5}]},{"name":"장각","cmd":86,"force":25,"intel":86,"pol":80,"hp":151,"dodge":0,"hit":0,"cooldown":8.49,"skillName":"황천뇌격","skillType":"책략","skillRange":"enemy_all","skillPower":20.08,"skillAcc":70,"skillHits":1,"skillDesc":"적 전체에게 책략 피해(위력 20, 명중 70%)(대상별 명중 개별 판정) 적중 시 적중 대상 이번 전투 동안 체력 회복 불가능.","tier":"A","slot":3,"effects":[{"phase":"hit","type":"no_heal"}]}],"4":[{"name":"황건적 졸개","cmd":50,"force":65,"intel":25,"pol":0,"hp":78,"dodge":0,"hit":0,"cooldown":9.14,"skillName":"황건난격","skillType":"물리","skillRange":"enemy_single","skillPower":18.11,"skillAcc":100,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 18, 명중 100%).","tier":"D","slot":1,"effects":[]},{"name":"공도","cmd":59,"force":70,"intel":23,"pol":22,"hp":122,"dodge":0,"hit":0,"cooldown":8.96,"skillName":"산채격파","skillType":"물리","skillRange":"enemy_single","skillPower":35.21,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 35, 명중 90%) 적중 시 적중 대상 통솔 -6(5초).","tier":"B","slot":2,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"cmd","delta":-6,"duration":5}]},{"name":"장보","cmd":83,"force":71,"intel":81,"pol":64,"hp":147,"dodge":0,"hit":0,"cooldown":8.78,"skillName":"황천주술","skillType":"책략","skillRange":"enemy_single","skillPower":40.24,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 책략 피해(위력 40, 명중 90%) 적중 시 적중 대상 정치 -10(5초).","tier":"A","slot":3,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"pol","delta":-10,"duration":5}]}],"5":[{"name":"황건적 졸개","cmd":50,"force":65,"intel":25,"pol":0,"hp":92,"dodge":0,"hit":0,"cooldown":8.81,"skillName":"황건난격","skillType":"물리","skillRange":"enemy_single","skillPower":18.14,"skillAcc":100,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 18, 명중 100%).","tier":"D","slot":1,"effects":[]},{"name":"황건적 졸개","cmd":50,"force":65,"intel":25,"pol":0,"hp":92,"dodge":0,"hit":0,"cooldown":8.81,"skillName":"황건난격","skillType":"물리","skillRange":"enemy_single","skillPower":18.14,"skillAcc":100,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 18, 명중 100%).","tier":"D","slot":2,"effects":[]},{"name":"장개","cmd":34,"force":66,"intel":8,"pol":1,"hp":143,"dodge":0,"hit":0,"cooldown":8.63,"skillName":"노략급습","skillType":"물리","skillRange":"enemy_lowest_hp_ratio","skillPower":40.32,"skillAcc":90,"skillHits":1,"skillDesc":"현재 체력 비율이 가장 낮은 적 1명에게 물리 피해(위력 40, 명중 90%).","tier":"B","slot":3,"effects":[]},{"name":"장량","cmd":78,"force":90,"intel":68,"pol":52,"hp":173,"dodge":0,"hit":0,"cooldown":8.27,"skillName":"인공격노","skillType":"물리","skillRange":"enemy_all","skillPower":22.18,"skillAcc":85,"skillHits":1,"skillDesc":"적 전체에게 물리 피해(위력 22, 명중 85%) 사용 후 자신 무력 +5(10초).","tier":"A","slot":4,"effects":[{"phase":"use","type":"stat","who":"self","stat":"force","delta":5,"duration":10}]}],"6":[{"name":"서영","cmd":80,"force":84,"intel":57,"pol":43,"hp":125,"dodge":0,"hit":0,"cooldown":8.63,"skillName":"선봉돌파","skillType":"물리","skillRange":"enemy_three","skillPower":36.36,"skillAcc":95,"skillHits":1,"skillDesc":"적 3명에게 물리 피해(위력 36, 명중 95%) 사용 후 자신 통솔 +8(7초).","tier":"B","slot":1,"effects":[{"phase":"use","type":"stat","who":"self","stat":"cmd","delta":8,"duration":7}]},{"name":"장제","cmd":70,"force":66,"intel":52,"pol":53,"hp":110,"dodge":0,"hit":0,"cooldown":8.99,"skillName":"군량수호","skillType":"책략","skillRange":"ally_lowest_hp_ratio","skillPower":0,"skillAcc":100,"skillHits":1,"skillDesc":"현재 체력 비율이 가장 낮은 아군 1명 지원 기술(명중 100%): 대상 아군 최대 체력의 10% 회복(최대 체력 초과 불가).","tier":"B","slot":2,"effects":[{"phase":"support","type":"heal_pct_max","value":10}]},{"name":"호진","cmd":65,"force":74,"intel":12,"pol":15,"hp":110,"dodge":0,"hit":0,"cooldown":8.81,"skillName":"호가맹진","skillType":"물리","skillRange":"enemy_two","skillPower":33.33,"skillAcc":90,"skillHits":1,"skillDesc":"적 2명에게 물리 피해(위력 33, 명중 90%) 적중 시 자신 무력 +5(10초).","tier":"B","slot":3,"effects":[{"phase":"hit_once","type":"stat","who":"self","stat":"force","delta":5,"duration":10}]}],"7":[{"name":"곽사(동탁)","cmd":64,"force":76,"intel":13,"pol":14,"hp":121,"dodge":0,"hit":0,"cooldown":8.55,"skillName":"난전참격","skillType":"물리","skillRange":"enemy_all","skillPower":30.36,"skillAcc":80,"skillHits":1,"skillDesc":"적 전체에게 물리 피해(위력 30, 명중 80%).","tier":"B","slot":1,"effects":[]},{"name":"이각(동탁)","cmd":69,"force":72,"intel":24,"pol":1,"hp":121,"dodge":0,"hit":0,"cooldown":8.55,"skillName":"군령포위","skillType":"책략","skillRange":"ally_all","skillPower":0,"skillAcc":100,"skillHits":1,"skillDesc":"아군 전체 지원 기술(명중 100%): 아군 명중 +10, 받는 최종피해 -10% (5초).","tier":"B","slot":2,"effects":[{"phase":"support","type":"stat","who":"target","stat":"hit","delta":10,"duration":5},{"phase":"support","type":"defense","who":"target","scope":"all","value":10,"duration":5}]},{"name":"우보","cmd":38,"force":60,"intel":21,"pol":26,"hp":112,"dodge":0,"hit":0,"cooldown":8.73,"skillName":"철기수호","skillType":"물리","skillRange":"enemy_single","skillPower":27.32,"skillAcc":95,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 27, 명중 95%) 사용 후 자신에게 도발 시전(5초).","tier":"B","slot":3,"effects":[{"phase":"use","type":"taunt","duration":5}]}],"8":[{"name":"주준","cmd":78,"force":65,"intel":70,"pol":71,"hp":108,"dodge":0,"hit":0,"cooldown":8.83,"skillName":"노장격려","skillType":"책략","skillRange":"ally_all","skillPower":0,"skillAcc":100,"skillHits":1,"skillDesc":"아군 전체 지원 기술(명중 100%): 대상 아군 통솔 +5(6초).","tier":"B","slot":1,"effects":[{"phase":"support","type":"stat","who":"target","stat":"cmd","delta":5,"duration":6}]},{"name":"이유","cmd":61,"force":26,"intel":93,"pol":75,"hp":108,"dodge":0,"hit":0,"cooldown":8.65,"skillName":"이간독계","skillType":"책략","skillRange":"enemy_single","skillPower":34.48,"skillAcc":85,"skillHits":1,"skillDesc":"적 1명에게 책략 피해(위력 34, 명중 85%) 적중 시 적중 대상 정치 -10(5초).","tier":"B","slot":2,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"pol","delta":-10,"duration":5}]},{"name":"왕윤","cmd":26,"force":6,"intel":67,"pol":80,"hp":103,"dodge":0,"hit":0,"cooldown":8.83,"skillName":"이화접목","skillType":"책략","skillRange":"enemy_single","skillPower":28.39,"skillAcc":85,"skillHits":1,"skillDesc":"적 1명에게 책략 피해(위력 28, 명중 85%) 적중 시 적중 대상 혼란.","tier":"B","slot":3,"effects":[{"phase":"hit","type":"cooldown","value":2,"cap":10}]}],"9":[{"name":"장료(동탁)","cmd":93,"force":92,"intel":78,"pol":58,"hp":155,"dodge":0,"hit":0,"cooldown":8.22,"skillName":"연참","skillType":"물리","skillRange":"enemy_two","skillPower":23.37,"skillAcc":95,"skillHits":2,"skillDesc":"적 2명에게 물리 피해(위력 23×2회, 명중 95%) 적중 시 적중 대상 통솔 -5(6초).","tier":"A","slot":1,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"cmd","delta":-5,"duration":6}]},{"name":"고순(동탁)","cmd":85,"force":86,"intel":55,"pol":46,"hp":124,"dodge":0,"hit":0,"cooldown":8.04,"skillName":"함진고수","skillType":"책략","skillRange":"self","skillPower":0,"skillAcc":100,"skillHits":1,"skillDesc":"자신 지원 기술(명중 100%): 자신 받는 전체 피해 -15%(5초).","tier":"B","slot":2,"effects":[{"phase":"support","type":"defense","who":"self","scope":"all","value":15,"duration":5}]},{"name":"화웅(동탁)","cmd":81,"force":92,"intel":56,"pol":40,"hp":155,"dodge":0,"hit":0,"cooldown":8.22,"skillName":"서량맹격","skillType":"물리","skillRange":"enemy_single","skillPower":44.7,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 44, 명중 90%) 적중 시 적중 대상 회피 -10(5초).","tier":"A","slot":3,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"dodge","delta":-10,"duration":5}]}],"10":[{"name":"여포(동탁)","cmd":87,"force":100,"intel":26,"pol":13,"hp":236,"dodge":0,"hit":0,"cooldown":7.9,"skillName":"비장일섬","skillType":"물리","skillRange":"enemy_three","skillPower":52.94,"skillAcc":100,"skillHits":1,"skillDesc":"적 3명에게 물리 피해(위력 52, 명중 100%) 적중 시 적중 대상 통솔 -12(5초).","tier":"S","slot":1,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"cmd","delta":-12,"duration":5}]},{"name":"동탁(동탁)","cmd":74,"force":87,"intel":69,"pol":19,"hp":217,"dodge":0,"hit":0,"cooldown":8.07,"skillName":"폭정군령","skillType":"책략","skillRange":"enemy_all","skillPower":18.32,"skillAcc":85,"skillHits":1,"skillDesc":"적 전체에게 책략 피해(위력 18, 명중 85%)(대상별 명중 개별 판정) 적중 시 적중 대상 무력 -8(5초).","tier":"A","slot":2,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"force","delta":-8,"duration":5}]}],"11":[{"name":"이각(군웅)","cmd":69,"force":72,"intel":24,"pol":1,"hp":131,"dodge":0,"hit":0,"cooldown":8.43,"skillName":"잔병돌격","skillType":"물리","skillRange":"enemy_single","skillPower":35.7,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 35, 명중 90%).","tier":"B","slot":1,"effects":[]},{"name":"가후(군웅)","cmd":86,"force":48,"intel":97,"pol":85,"hp":143,"dodge":10,"hit":0,"cooldown":8.07,"skillName":"독계잠식","skillType":"책략","skillRange":"enemy_single","skillPower":38.76,"skillAcc":85,"skillHits":1,"skillDesc":"적 1명에게 책략 피해(위력 38, 명중 85%) 적중 시 적중 대상 받는 책략 피해 +15%(20초).","tier":"A","slot":2,"effects":[{"phase":"hit","type":"magic_vulnerability","value":15,"duration":20}]},{"name":"곽사(군웅)","cmd":64,"force":76,"intel":13,"pol":14,"hp":131,"dodge":0,"hit":0,"cooldown":8.25,"skillName":"혈전난무","skillType":"물리","skillRange":"enemy_all","skillPower":20.4,"skillAcc":85,"skillHits":1,"skillDesc":"적 전체에게 물리 피해(위력 20, 명중 85%) 사용 후 자신 무력 +5(9초).","tier":"B","slot":3,"effects":[{"phase":"use","type":"stat","who":"self","stat":"force","delta":5,"duration":9}]}],"12":[{"name":"원술(군웅)","cmd":44,"force":65,"intel":61,"pol":16,"hp":117,"dodge":0,"hit":0,"cooldown":8.36,"skillName":"황제참칭","skillType":"책략","skillRange":"enemy_all","skillPower":16.35,"skillAcc":80,"skillHits":1,"skillDesc":"적 전체에게 책략 피해(위력 16, 명중 80%)(대상별 명중 개별 판정) 적중 시 적중 대상 통솔 -5(5초).","tier":"B","slot":1,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"cmd","delta":-5,"duration":5}]},{"name":"도겸","cmd":51,"force":27,"intel":63,"pol":63,"hp":112,"dodge":0,"hit":0,"cooldown":8.54,"skillName":"서주보전","skillType":"책략","skillRange":"ally_lowest_hp_ratio","skillPower":0,"skillAcc":100,"skillHits":1,"skillDesc":"현재 체력 비율이 가장 낮은 아군 1명 지원 기술(명중 100%): 대상 아군 최대 체력의 20% 회복(최대 체력 초과 불가).","tier":"B","slot":2,"effects":[{"phase":"support","type":"heal_pct_max","value":20}]},{"name":"태사자(군웅)","cmd":82,"force":93,"intel":66,"pol":58,"hp":165,"dodge":0,"hit":0,"cooldown":8,"skillName":"쌍극비무","skillType":"물리","skillRange":"enemy_two","skillPower":21.46,"skillAcc":95,"skillHits":2,"skillDesc":"적 2명에게 물리 피해(위력 21×2회, 명중 95%) 적중 시 적중 대상 회피 -8(5초).","tier":"A","slot":2,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"dodge","delta":-8,"duration":5}]},{"name":"우금(군웅)","cmd":72,"force":79,"intel":38,"pol":40,"hp":128,"dodge":0,"hit":0,"cooldown":8.36,"skillName":"엄정방진","skillType":"책략","skillRange":"ally_all","skillPower":0,"skillAcc":100,"skillHits":1,"skillDesc":"아군 전체 지원 기술(명중 100%): 대상 아군 받는 전체 피해 -10%(7초).","tier":"B","slot":2,"effects":[{"phase":"support","type":"defense","who":"target","scope":"all","value":10,"duration":7}]},{"name":"진등","cmd":79,"force":64,"intel":81,"pol":80,"hp":122,"dodge":0,"hit":0,"cooldown":8.36,"skillName":"서주기략","skillType":"책략","skillRange":"enemy_single","skillPower":32.7,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 책략 피해(위력 32, 명중 90%) 적중 시 적중 대상 지력 -8(5초).","tier":"B","slot":3,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"intel","delta":-8,"duration":5}]},{"name":"유요","cmd":62,"force":67,"intel":46,"pol":70,"hp":122,"dodge":0,"hit":0,"cooldown":8.36,"skillName":"강동결진","skillType":"책략","skillRange":"ally_all","skillPower":0,"skillAcc":100,"skillHits":1,"skillDesc":"아군 전체 지원 기술(명중 100%): 대상 아군 통솔 +10(7초).","tier":"B","slot":3,"effects":[{"phase":"support","type":"stat","who":"target","stat":"cmd","delta":10,"duration":7}]},{"name":"하후돈(군웅)","cmd":89,"force":90,"intel":58,"pol":70,"hp":165,"dodge":0,"hit":0,"cooldown":8.18,"skillName":"독안맹격","skillType":"물리","skillRange":"enemy_single","skillPower":30.66,"skillAcc":75,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 30, 명중 75%) 적중 시 적중 대상 혼란.","tier":"A","slot":3,"effects":[{"phase":"hit","type":"cooldown","value":2,"cap":10}]}],"13":[{"name":"고순(군웅)","cmd":85,"force":86,"intel":55,"pol":46,"hp":161,"dodge":0,"hit":0,"cooldown":8.1,"skillName":"결사진군","skillType":"물리","skillRange":"enemy_single","skillPower":32.77,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 32, 명중 90%) 사용 후 자신 받는 전체 피해 -15%(9초).","tier":"A","slot":1,"effects":[]},{"name":"성렴","cmd":82,"force":89,"intel":43,"pol":55,"hp":161,"dodge":0,"hit":0,"cooldown":8.1,"skillName":"기마돌파","skillType":"물리","skillRange":"enemy_single","skillPower":51.2,"skillAcc":95,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 50, 명중 95%).","tier":"A","slot":2,"effects":[]},{"name":"위월","cmd":72,"force":84,"intel":43,"pol":41,"hp":156,"dodge":0,"hit":0,"cooldown":8.1,"skillName":"추혼연격","skillType":"물리","skillRange":"enemy_single","skillPower":13.31,"skillAcc":90,"skillHits":2,"skillDesc":"적 1명에게 물리 피해(위력 13×2회, 명중 90%) 적중 시 적중 대상 이번 전투 동안 체력 회복 불가능.","tier":"A","slot":3,"effects":[{"phase":"hit","type":"no_heal"}]}],"14":[{"name":"장료(군웅)","cmd":93,"force":92,"intel":78,"pol":58,"hp":196,"dodge":0,"hit":0,"cooldown":7.63,"skillName":"위진강습","skillType":"물리","skillRange":"enemy_two","skillPower":41.04,"skillAcc":95,"skillHits":1,"skillDesc":"적 2명에게 물리 피해(위력 40, 명중 95%) 적중 시 적중 대상 통솔 -15(5초).","tier":"S","slot":1,"effects":[]},{"name":"진궁(군웅)","cmd":78,"force":55,"intel":89,"pol":83,"hp":152,"dodge":0,"hit":0,"cooldown":8.39,"skillName":"복양수호","skillType":"책략","skillRange":"ally_all","skillPower":0,"skillAcc":100,"skillHits":1,"skillDesc":"아군 전체 지원 기술(명중 100%): 대상 아군 통솔, 지력 +15(9초).","tier":"A","slot":2,"effects":[{"phase":"support","type":"stat","who":"target","stat":"cmd","delta":15,"duration":9},{"phase":"support","type":"stat","who":"target","stat":"intel","delta":15,"duration":9}]},{"name":"고순(군웅)","cmd":85,"force":86,"intel":55,"pol":46,"hp":163,"dodge":0,"hit":0,"cooldown":8.03,"skillName":"결사진군","skillType":"물리","skillRange":"enemy_single","skillPower":32.83,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 32, 명중 90%) 사용 후 자신 받는 전체 피해 -15%(9초).","tier":"A","slot":3,"effects":[{"phase":"use","type":"defense","who":"self","scope":"all","value":15,"duration":9}]}],"15":[{"name":"여포(군웅)","cmd":87,"force":100,"intel":26,"pol":13,"hp":291,"dodge":0,"hit":0,"cooldown":7.3,"skillName":"무신천격","skillType":"물리","skillRange":"enemy_three","skillPower":51.4,"skillAcc":100,"skillHits":1,"skillDesc":"적 3명에게 물리 피해(위력 50, 명중 100%) 적중 시 적중 대상 혼란; 적중 대상이 사망시 체력 30 회복.","tier":"SS","slot":1,"effects":[{"phase":"hit","type":"cooldown","value":2,"cap":10},{"phase":"kill","type":"heal_flat","who":"self","value":30}]},{"name":"장료(군웅)","cmd":93,"force":92,"intel":78,"pol":58,"hp":229,"dodge":0,"hit":0,"cooldown":7.3,"skillName":"위진강습","skillType":"물리","skillRange":"enemy_two","skillPower":41.12,"skillAcc":95,"skillHits":1,"skillDesc":"적 2명에게 물리 피해(위력 40, 명중 95%) 적중 시 적중 대상 통솔 -15(5초).","tier":"S","slot":2,"effects":[{"phase":"hit","type":"stat","who":"target","stat":"cmd","delta":-15,"duration":5}]},{"name":"송헌","cmd":68,"force":77,"intel":38,"pol":27,"hp":152,"dodge":0,"hit":0,"cooldown":7.88,"skillName":"잔월참격","skillType":"물리","skillRange":"enemy_single","skillPower":32.9,"skillAcc":90,"skillHits":1,"skillDesc":"적 1명에게 물리 피해(위력 32, 명중 90%) 적중 시 자신 체력 5회복.","tier":"B","slot":3,"effects":[{"phase":"hit_once","type":"heal_flat","who":"self","value":5}]},{"name":"위속","cmd":67,"force":78,"intel":31,"pol":32,"hp":152,"dodge":0,"hit":0,"cooldown":7.88,"skillName":"엄호진군","skillType":"책략","skillRange":"ally_all","skillPower":0,"skillAcc":100,"skillHits":1,"skillDesc":"아군 전체 지원 기술(명중 100%): 대상 아군 최종 물리피해 감소 10%(5초).","tier":"B","slot":4,"effects":[{"phase":"support","type":"defense","who":"target","scope":"physical","value":10,"duration":5}]}]};
+
+</script><script>
+'use strict';
+/* 삼국지 군웅전기 시제품 v1: 원작 v20.1은 수정하지 않고 새 엔진으로 구현. */
+const SAVE_KEY='tk-warlord-newgame-prototype-v1';
+const SHU=['유비','관우','장비','조운','제갈량','마초','황충'];
+const WEI=['조조','하후돈','장료','전위','허저','사마의','순욱'];
+const WU=['손권','손책','주유','감녕','태사자','황개','육손'];
+const NAMES=[...SHU,...WEI,...WU];
+const FAC={shu:'촉',wei:'위',wu:'오'};
+const HANJA={'유비':'劉','관우':'關','장비':'張','조운':'趙','제갈량':'諸','마초':'馬','황충':'黃','조조':'曹','하후돈':'夏','장료':'張','전위':'典','허저':'許','사마의':'司','순욱':'荀','손권':'孫','손책':'策','주유':'周','감녕':'甘','태사자':'太','황개':'黃','육손':'陸'};
+const COST=[2,4,8];
+const VAL=(arr,level)=>arr[Math.max(0,Math.min(3,Number(level)||0))];
+const s=(id,name,role,desc,vals,cd,extra={})=>({id,name,role,desc,vals,cd,...extra});
+// 수치 순서: Lv.0 / Lv.1 / Lv.2 / Lv.3. 스킬 효과/초기 쿨타임은 1차 밸런스 초안.
+const SHU_SKILLS={
+ '유비':[
+ s('liu_bond','도원결의','지휘','아군 전체 피해 증가 5초. 관우·장비가 출전 중이면 해당 장수 피해 감소 4%.',[5,7,9,12],8),
+ s('liu_care','인덕애민','방어','아군 전체 보호막과 3초 지속 회복.',[3,4,5,6],9,{regen:[1,1,1.3,1.5]}),
+ s('liu_visit','삼고초려','전략','지력 최고 아군의 다음 기술 발동을 앞당김.',[.5,.7,.9,1.2],8),
+ s('liu_last','칠전팔기','역전','아군 전체 피해 감소 5초. 생존 아군 2명 이하면 2배.',[5,7,9,12],9)
+ ],
+ '관우':[
+ s('guan_strike','백마참장','공격','적 1명 강타. 첫 발동은 최종 피해 20% 증가.',[150,170,190,215],6),
+ s('guan_guard','충의의 수호','방어','자신과 체력 최저 아군에게 5초 보호막.',[8,11,14,18],8),
+ s('guan_flood','수엄칠군','전략','적 전열 전체 공격, 4초 공격 속도 감소.',[65,75,85,100],9,{slow:[7,9,11,14]}),
+ s('guan_chain','청룡연격','대기만성','단일 피해. 사용할수록 자신의 해당 기술 피해 증가, 최대 3중첩.',[80,95,110,125],6.5,{stack:[5,6,7,9]})
+ ],
+ '장비':[
+ s('zhang_aoe','만인지적','광역 공격','적 전체에게 물리 피해.',[60,70,80,95],8),
+ s('zhang_roar','장판대갈','교란','적 전체 공격 속도 감소, 4초.',[8,11,14,18],8),
+ s('zhang_yan','의석엄안','전략','적 1명 강타 후 피해량 감소, 4초.',[115,130,145,165],7.5,{weaken:[7,9,11,14]}),
+ s('zhang_rage','노기충천','역전','5초간 자신의 피해 증가. 체력 50% 이하라면 두 배.',[6,8,10,13],8)
+ ],
+ '조운':[
+ s('zhao_save','단기구주','구출','체력이 가장 낮은 아군 1명에게 5초 보호막.',[12,15,18,22],8),
+ s('zhao_dodge','칠진칠출','회피 공격','적 1명 공격 후 자신의 회피율 상승, 4초.',[95,110,125,145],6,{dodge:[10,14,18,23]}),
+ s('zhao_feint','한수공성','전략','적 전체 공격 명중률 감소, 4초.',[6,8,10,12],8),
+ s('zhao_guard','일신시담','호위','체력이 가장 낮은 아군의 피해를 5초간 대신 받음. 자신 피해 감소 8%.',[10,13,16,20],8)
+ ],
+ '제갈량':[
+ s('zhuge_array','팔진도','방어','전열 아군 피해 감소, 후열 아군 공격 속도 증가, 5초.',[6,8,10,12],9,{rearSpeed:[3,4,5,7]}),
+ s('zhuge_plan','융중대책','전략','4초간 적 전체가 받는 피해 증가.',[5,7,9,12],9),
+ s('zhuge_bolts','제갈연노','책략 공격','적 1명에게 책략 피해 3회.',[35,40,46,54],6.5),
+ s('zhuge_supply','목우유마','지원','체력 비율이 낮은 아군 2명, 4초 동안 지속 회복.',[1.5,2,2.5,3],8)
+ ],
+ '마초':[
+ s('ma_charge','서량금마','돌격','적 1명 강타. 첫 발동 피해량 추가 증가.',[145,165,185,205],6.5,{first:[10,12,14,16]}),
+ s('ma_assault','관중맹습','공격 강화','자신의 공격 피해 증가 5초. 받는 피해도 5% 증가.',[10,14,18,23],8),
+ s('ma_cavalry','서량철기','지휘','4초간 아군 전체 공격 속도 증가, 전열은 추가 3%p.',[6,8,10,13],8),
+ s('ma_recover','패전의 재기','생존','적 1명 공격. 자신의 HP 60% 이하일 때 HP 회복.',[105,120,140,165],7.5,{heal:[5,7,9,12]})
+ ],
+ '황충':[
+ s('huang_finish','정군참수','공격','적 1명 공격. 대상 HP 50% 이하라면 최종 피해 15% 추가.',[135,155,180,205],7),
+ s('huang_aim','백보천양','정밀 공격','명중률 상승과 적 방어 일부 무시.',[95,105,115,125],6.5,{hit:[10,12,15,18],pierce:[5,8,11,15]}),
+ s('huang_old','노익장','대기만성','적 1명 공격. 전투 10초 이후 피해량 30% 추가.',[90,105,120,140],6.5),
+ s('huang_cheer','선봉격려','지원','무력 상위 아군 2명의 피해량 증가 4초.',[6,8,10,13],8)
+ ]
+};
+// 위·오 14명의 4개 기술은 정식 기획 전: 플레이 테스트용 임시 공용 기술이다.
+const TEMP_SKILLS=[
+ s('tmp_strike','임시 · 공격','임시','자동 선택된 적 1명에게 기본 물리 공격 배율 피해.',[105,120,135,155],7,{temporary:true}),
+ s('tmp_defend','임시 · 방어','임시','자신과 체력 비율 최저 아군에게 5초 보호막.',[6,8,10,12],9,{temporary:true}),
+ s('tmp_tactic','임시 · 책략','임시','적 전체에 책략 피해.',[35,45,55,65],9,{temporary:true}),
+ s('tmp_help','임시 · 지원','임시','체력 비율 최저 아군 한 명을 회복.',[8,10,12,15],9,{temporary:true})
+];
+function skillList(name){return SHU_SKILLS[name]||TEMP_SKILLS;}
+let state=null,focusHeroId=null,focusSlot=null,tab='camp',modalCloseAllowed=true,toastTimer=null,dragHeroId=null,tapDeployHeroId=null;
+let fight=null,fightTimer=null,fightSpeed=1,skillSerial=0;
+const $=id=>document.getElementById(id);
+const rand=n=>Math.floor(Math.random()*n);
+const shuffle=arr=>{const a=arr.slice();for(let i=a.length-1;i>0;i--){const j=rand(i+1);[a[i],a[j]]=[a[j],a[i]];}return a;};
+function safeNum(v,otherwise=0){const n=Number(v);return Number.isFinite(n)?n:otherwise;}
+function clamp(x,min,max){return Math.max(min,Math.min(max,x));}
+function heroById(id){return state?.roster.find(h=>h.id===id)||null;}
+function skillLevel(hero,i){return (hero.base?.[i]||0)+(hero.paid?.[i]||0);}
+function paidCount(hero){return hero.paid.reduce((a,b)=>a+b,0);}
+function cap(){return state?.treasures.includes('손자병법')?6:5;}
+function toast(msg){const e=$('toast');e.textContent=msg;e.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>e.classList.remove('show'),2100);}
+function newGeneral(name){const chosen=shuffle([0,1,2,3]).slice(0,3);const base=[0,0,0,0];for(const i of chosen)base[i]=1;
+ return {id:`h${++state.nextId}`,name,base,paid:[0,0,0,0],active:chosen[0],slot:null,hp:HERO_STATS[name].hp};}
+function beginRun(faction){if(!FAC[faction])return;if((state||load())&&!confirm('기존 출정 기록이 새 출정으로 교체됩니다. 계속할까요?'))return;
+ state={version:1,side:faction,round:1,gold:6,nextId:0,roster:[],treasures:[],recruitPending:false,recruitChoices:[],optionalDone:{},win:false};
+ const starters={shu:['유비','관우','장비'],wei:['조조','하후돈','장료'],wu:['손권','손책','주유']}[faction];
+ starters.forEach((n,i)=>{const h=newGeneral(n);h.slot=i<2?i:4;state.roster.push(h);});
+ focusHeroId=state.roster[0].id;focusSlot=null;save();openGame();switchTab('camp');toast('출정 시작! 장수 3명이 편성되었습니다.');}
+function validateLoaded(obj){return obj&&obj.version===1&&FAC[obj.side]&&Number.isInteger(obj.round)&&obj.round>=1&&obj.round<=16&&Array.isArray(obj.roster)&&obj.roster.length<=8&&Array.isArray(obj.treasures)&&obj.roster.every(h=>h&&HERO_STATS[h.name]&&Array.isArray(h.base)&&h.base.length===4&&Array.isArray(h.paid)&&h.paid.length===4&&h.base.filter(x=>x===1).length===3&&h.base.every(x=>x===0||x===1)&&h.paid.every(x=>Number.isInteger(x)&&x>=0)&&h.base.every((b,i)=>b+h.paid[i]<=3)&&paidCount(h)<=4&&Number.isFinite(h.hp)&&[null,0,1,2,3,4,5,6,7].includes(h.slot));}
+function load(){try{const x=JSON.parse(localStorage.getItem(SAVE_KEY));if(validateLoaded(x))return x;}catch(e){}return null;}
+function save(){if(!state)return;try{localStorage.setItem(SAVE_KEY,JSON.stringify(state));}catch(e){console.warn('로컬 저장 불가',e);}}
+function continueRun(){const x=load();if(!x){toast('저장된 출정이 없습니다.');showStartMenu();return;}state=x;focusHeroId=state.roster[0]?.id||null;tapDeployHeroId=null;openGame();switchTab('camp');}
+function showStartMenu(){$('start-menu').hidden=false;$('faction-menu').hidden=true;$('continue-button').disabled=!load();}
+function showFactionSelection(){$('start-menu').hidden=true;$('faction-menu').hidden=false;}
+function openGame(){$('start-screen').hidden=true;$('game-content').hidden=false;renderAll();}
+function renderAll(){renderTop();renderCamp();renderMap();}
+function renderTop(){if(!state){$('topstats').innerHTML='';return;}$('topstats').innerHTML=`<span>${Math.min(15,state.round)} / 15전</span><span>🪙 ${state.gold}금</span>`;}
+function switchTab(name){if(name==='battle'&&!fight)return;tab=name;for(const x of ['camp','map','battle']){const page=$(x+'-page');if(page)page.hidden=x!==name;const b=$('tab-'+x);if(b)b.classList.toggle('active',x===name);}if(name==='camp')renderCamp();if(name==='map')renderMap();}
+function isTouchUi(){return window.matchMedia('(pointer: coarse)').matches||window.innerWidth<=830;}
+function deployedCount(){return state.roster.filter(x=>x.slot!==null).length;}
+function renderCamp(){
+ if(!state)return;
+ renderTop();
+ $('deploy-counter').textContent=`${deployedCount()} / ${cap()}명`;
+ $('formation-hint').textContent='';
+ for(const row of ['front','rear']){
+  const start=row==='front'?0:4;
+  $(row+'-slots').innerHTML=Array.from({length:4},(_,i)=>{
+   const pos=start+i,h=state.roster.find(x=>x.slot===pos);
+   return `<button class="formation-slot ${h?'on':''} ${focusSlot===pos?'focus':''} ${h?'':'empty'}"
+     onclick="onSlotAction(${pos})" draggable="${!!h&&!isTouchUi()}"
+     ondragstart="${h?`startDragHero(event,'${h.id}')`:''}" ondragend="endDragHero(event)"
+     ondragover="allowDropHero(event)" ondragleave="leaveDropHero(event)" ondrop="dropHeroOnSlot(event,${pos})">
+      <span class="slot-no">${i+1}</span>
+      ${h?`<div class="hero-face" data-faction="${HERO_STATS[h.name].faction}">${HANJA[h.name]}</div><span class="mini-name">${h.name}</span>`:'<strong>+</strong><span>배치</span>'}
+     </button>`;
+  }).join('');
+ }
+ const reserve=state.roster.filter(h=>h.slot===null);
+ $('roster-counter').textContent=`대기 ${reserve.length}명 · 전체 ${state.roster.length}/8`;
+ $('roster-grid').innerHTML=reserve.length?reserve.map(h=>`<div class="hero-card ${tapDeployHeroId===h.id?'tap-selected':''}"
+   draggable="${!isTouchUi()}" role="button" tabindex="0"
+   aria-label="${h.name} ${isTouchUi()?'선택':'상세 보기'}"
+   onclick="selectHero('${h.id}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();selectHero('${h.id}')}"
+   ondragstart="startDragHero(event,'${h.id}')" ondragend="endDragHero(event)">
+     <button class="hero-more" aria-label="${h.name} 스킬 상세" title="상세" onclick="event.stopPropagation();openHeroDetails('${h.id}')">ⓘ</button>
+     <div class="hero-face" data-faction="${HERO_STATS[h.name].faction}">${HANJA[h.name]}</div>
+     <strong>${h.name}</strong></div>`).join(''):'<div class="empty-roster">대기 장수 없음</div>';
+ $('recruit-btn').disabled=!state.recruitPending;
+ $('recruit-btn').textContent='재야탐색';
+ $('treasure-pills').innerHTML=state.treasures.length?state.treasures.map(t=>`<span class="treasure-pill">${t}</span>`).join(''):'<span class="hint">아직 없음</span>';
+}
+function placeHeroToSlot(id,slot){const h=heroById(id);if(!h||fight)return false;const other=state.roster.find(x=>x.slot===slot);if(other&&other.id!==h.id)other.slot=null;if(h.slot===null&&deployedCount()>=cap()&&!other){toast(`최대 ${cap()}명까지 출전할 수 있습니다.`);return false;}h.slot=slot;focusHeroId=id;focusSlot=null;tapDeployHeroId=null;save();toast(`${h.name} 배치 완료`);return true;}
+function selectSlot(slot){if(fight){toast('전투 중에는 진형을 바꿀 수 없습니다.');return;}focusSlot=slot;renderCamp();}
+function onSlotAction(slot){
+ if(fight)return;
+ if(tapDeployHeroId){const id=tapDeployHeroId;placeHeroToSlot(id,slot);renderCamp();return;}
+ const h=state.roster.find(x=>x.slot===slot);
+ if(h){openHeroDetails(h.id);return;}
+ if(!isTouchUi()&&focusHeroId&&heroById(focusHeroId)?.slot===null){placeHeroToSlot(focusHeroId,slot);renderCamp();return;}
+ focusSlot=slot;renderCamp();
+}
+function selectHero(id){
+ if(fight)return;
+ const h=heroById(id);if(!h)return;
+ focusHeroId=id;
+ if(isTouchUi()){focusSlot=null;tapDeployHeroId=id;renderCamp();toast('배치할 칸을 선택하세요.');}
+ else openHeroDetails(id);
+}
+function startDragHero(ev,id){if(isTouchUi()||fight){ev.preventDefault();return;}dragHeroId=id;ev.dataTransfer.setData('text/plain',id);ev.dataTransfer.effectAllowed='move';ev.currentTarget.classList.add('dragging');focusHeroId=id;}
+function endDragHero(ev){dragHeroId=null;ev.currentTarget.classList.remove('dragging');document.querySelectorAll('.formation-slot').forEach(el=>el.classList.remove('drop-target'));}
+function allowDropHero(ev){if(fight||isTouchUi())return;ev.preventDefault();ev.currentTarget.classList.add('drop-target');}
+function leaveDropHero(ev){ev.currentTarget.classList.remove('drop-target');}
+function dropHeroOnSlot(ev,slot){ev.preventDefault();ev.currentTarget.classList.remove('drop-target');if(fight)return;const id=ev.dataTransfer.getData('text/plain')||dragHeroId;if(!id)return;placeHeroToSlot(id,slot);renderCamp();}
+function choosePositionFromDetails(id){if(fight)return;const h=heroById(id);if(!h)return;focusHeroId=id;tapDeployHeroId=id;closeModal();renderCamp();toast('배치할 칸을 선택하세요.');}
+function sendToReserve(id){const h=heroById(id);if(!h||fight)return;h.slot=null;focusSlot=null;if(tapDeployHeroId===id)tapDeployHeroId=null;save();renderCamp();}
+function autoPlace(id){const h=heroById(id);if(!h||fight)return;if(h.slot!==null){toast('이미 출전 중입니다.');return;}if(deployedCount()>=cap()){toast('출전 정원이 가득 찼습니다.');return;}const used=new Set(state.roster.map(x=>x.slot));const free=[0,1,2,3,4,5,6,7].find(x=>!used.has(x));if(free!==undefined){h.slot=free;save();renderCamp();}}
+function skillDamageText(sk,level){
+ const physicalOrMagic=new Set(['guan_strike','guan_flood','guan_chain','zhang_aoe','zhang_yan','zhao_dodge','zhuge_bolts','ma_charge','ma_recover','huang_finish','huang_aim','huang_old','tmp_strike','tmp_tactic']);
+ if(!physicalOrMagic.has(sk.id))return '0';
+ const v=VAL(sk.vals,level);
+ if(sk.id==='zhuge_bolts')return `${v}% × 3회`;
+ if(['guan_flood','zhang_aoe','tmp_tactic'].includes(sk.id))return `${v}% / 대상`;
+ return `${v}%`;
+}
+function skillEffectText(sk,level){
+ const v=VAL(sk.vals,level),e=(key)=>sk[key]?VAL(sk[key],level):0;
+ switch(sk.id){
+ case 'liu_bond':return `아군 전체 피해 +${v}%, 5초. 관우·장비는 받는 피해 추가 4% 감소.`;
+ case 'liu_care':return `아군 전체 보호막 최대 HP ${v}%, 3초간 매초 최대 HP ${e('regen')}% 회복.`;
+ case 'liu_visit':return `지력이 가장 높은 아군의 다음 기술 발동 ${v}초 앞당김.`;
+ case 'liu_last':return `전체 받는 피해 ${v}% 감소, 5초. 생존 2명 이하면 ${v*2}% 감소.`;
+ case 'guan_strike':return `첫 사용 시 피해량 20% 추가.`;
+ case 'guan_guard':return `자신과 체력 비율 최저 아군에게 각각 최대 HP ${v}% 보호막, 5초.`;
+ case 'guan_flood':return `적 전열 전체 공격, 공격 속도 ${e('slow')}% 감소, 4초.`;
+ case 'guan_chain':return `사용할 때마다 이 기술 피해 +${e('stack')}%, 최대 3중첩.`;
+ case 'zhang_aoe':return `적 전체를 공격.`;
+ case 'zhang_roar':return `적 전체 공격 속도 ${v}% 감소, 4초.`;
+ case 'zhang_yan':return `대상 피해량 ${e('weaken')}% 감소, 4초.`;
+ case 'zhang_rage':return `자신의 피해량 +${v}%, 5초. HP 50% 이하라면 +${v*2}%.`;
+ case 'zhao_save':return `체력 비율 최저 아군에게 최대 HP ${v}% 보호막, 5초.`;
+ case 'zhao_dodge':return `공격 후 자신 회피율 +${e('dodge')}%p, 4초.`;
+ case 'zhao_feint':return `적 전체 명중률 ${v}%p 감소, 4초.`;
+ case 'zhao_guard':return `체력 최저 아군의 피해 ${v}% 대신 받음. 자신 피해 8% 감소, 5초.`;
+ case 'zhuge_array':return `전열 피해 ${v}% 감소, 후열 공격 속도 +${e('rearSpeed')}%, 5초.`;
+ case 'zhuge_plan':return `적 전체가 받는 피해 +${v}%, 4초.`;
+ case 'zhuge_bolts':return `적 1명에게 책략 피해 3회.`;
+ case 'zhuge_supply':return `HP 비율 최저 아군 2명, 4초간 매초 최대 HP ${v}% 회복.`;
+ case 'ma_charge':return `첫 발동 피해 +${e('first')}%.`;
+ case 'ma_assault':return `자신의 공격 피해 +${v}%, 받는 피해 +5%, 5초.`;
+ case 'ma_cavalry':return `전체 공격 속도 +${v}%, 전열은 추가 +3%p, 4초.`;
+ case 'ma_recover':return `HP 60% 이하일 때 최대 HP ${e('heal')}% 회복.`;
+ case 'huang_finish':return `대상 HP가 50% 이하라면 최종 피해 15% 추가.`;
+ case 'huang_aim':return `명중률 +${e('hit')}%p, 대상 방어력 ${e('pierce')}% 무시.`;
+ case 'huang_old':return `전투 시작 10초 이후 최종 피해 30% 추가.`;
+ case 'huang_cheer':return `무력 상위 아군 2명의 피해 +${v}%, 4초.`;
+ case 'tmp_strike':return `적 1명에게 물리 피해. 임시 기술.`;
+ case 'tmp_defend':return `자신과 체력 최저 아군에게 각각 최대 HP ${v}% 보호막, 5초. 임시 기술.`;
+ case 'tmp_tactic':return `적 전체 책략 피해. 임시 기술.`;
+ case 'tmp_help':return `체력 최저 아군 최대 HP ${v}% 회복. 임시 기술.`;
+ default:return sk.desc;
+ }
+}
+function skillSnapshot(sk,level){return `<p><strong>데미지</strong> ${skillDamageText(sk,level)}</p><p><strong>효과</strong> ${skillEffectText(sk,level)}</p><p><strong>쿨타임</strong> ${sk.cd}초</p>`;}
+function renderHeroDetail(h){
+ const d=HERO_STATS[h.name],skills=skillList(h.name);
+ const stats=[`체력 ${Math.ceil(h.hp)}/${d.hp}`,`통솔 ${d.cmd}`,`무력 ${d.force}`,`지력 ${d.intel}`,`정치 ${d.pol}`];
+ return `<div class="hero-popup-head">
+  <div class="hero-face" data-faction="${d.faction}">${HANJA[h.name]}</div>
+  <div class="hero-popup-identity"><strong>${h.name}</strong><span>${FAC[d.faction]} · ${h.slot===null?'대기':h.slot<4?'전열':'후열'}</span></div>
+  <div class="hero-popup-budget">🪙 ${state.gold}금<br>강화 ${paidCount(h)}/4</div>
+ </div><div class="hero-popup-stats">${stats.map(v=>`<span>${v}</span>`).join('')}</div>
+ <div class="hero-skills">${skills.map((sk,i)=>{
+  const lvl=skillLevel(h,i);
+  return `<article class="hero-skill ${h.active===i?'active-skill':''}">
+   <div class="hero-skill-top"><span class="hero-skill-name">${sk.name}</span><span class="hero-skill-level">Lv.${lvl}/3</span></div>
+   <div class="hero-skill-line"><span>데미지</span><strong>${skillDamageText(sk,lvl)}</strong></div>
+   <div class="hero-skill-line"><span>쿨타임</span><strong>${sk.cd}초</strong></div>
+   <div class="hero-skill-effect"><span class="hero-effect-label">효과</span>${skillEffectText(sk,lvl)}</div>
+   <div class="hero-skill-actions">
+    <button class="${h.active===i?'is-active':'ghost'}" onclick="setSkill('${h.id}',${i})">${h.active===i?'✓ 사용 중':'스킬 지정'}</button>
+    <button class="accent" ${lvl>=3?'disabled':''} onclick="showUpgradePreview('${h.id}',${i})">${lvl>=3?'최대 강화':'스킬 강화'}</button>
+    ${h.paid[i]>0?`<button class="ghost" onclick="refundSkill('${h.id}',${i})">회수 ${COST[lvl-1]/2}금</button>`:''}
+   </div>
+  </article>`;
+ }).join('')}</div>
+ <div class="hero-popup-footer"><div class="actions">
+  ${h.slot===null?`<button class="ghost" onclick="choosePositionFromDetails('${h.id}')">배치하기</button>`:`<button class="ghost" onclick="choosePositionFromDetails('${h.id}')">위치 변경</button><button class="ghost" onclick="sendToReserve('${h.id}');closeModal()">대기로 이동</button>`}
+  <button class="ghost" onclick="askRelease('${h.id}')">장수 방출</button>
+ </div><button onclick="closeModal()">닫기</button></div>`;
+}
+function openHeroDetails(id){
+ if(!state||fight)return;
+ const h=heroById(id);if(!h)return;
+ focusHeroId=id;
+ openModal('장수 상세',renderHeroDetail(h));
+ $('modal-root').querySelector('.modal-box').classList.add('hero-detail-modal');
+}
+function showUpgradePreview(id,i){
+ const h=heroById(id);if(!h||fight||i<0||i>3)return;
+ const sk=skillList(h.name)[i],lev=skillLevel(h,i);
+ if(lev>=3){toast('이미 최대 레벨입니다.');return;}
+ const cost=COST[lev],canBuy=paidCount(h)<4&&state.gold>=cost;
+ const msg=paidCount(h)>=4?'강화 4회를 모두 사용했습니다.':state.gold<cost?'금화가 부족합니다.':'';
+ openModal(`${sk.name} · 스킬 강화`,
+  `<div class="upgrade-box"><div class="upgrade-side"><h3>현재 Lv.${lev}</h3>${skillSnapshot(sk,lev)}</div>
+   <div class="upgrade-arrow">➜</div><div class="upgrade-side new"><h3>강화 후 Lv.${lev+1}</h3>${skillSnapshot(sk,lev+1)}</div></div>
+   <div class="upgrade-price">필요 금화 ${cost}금 <small>보유 ${state.gold}금 · 강화 ${paidCount(h)}/4회</small></div>
+   ${msg?`<p class="modal-note" style="text-align:center">${msg}</p>`:''}`,
+  `<button class="ghost" onclick="openHeroDetails('${id}')">장수 상세로</button><button class="accent" ${canBuy?'':'disabled'} onclick="confirmSkillUpgrade('${id}',${i})">${cost}금 사용 · 강화</button>`);
+ $('modal-root').querySelector('.modal-box').classList.add('hero-detail-modal');
+}
+function confirmSkillUpgrade(id,i){
+ const h=heroById(id);if(!h||fight||i<0||i>3)return;
+ const lev=skillLevel(h,i),cost=COST[lev];
+ if(lev>=3||cost===undefined||paidCount(h)>=4||state.gold<cost){toast('강화 조건을 확인하세요.');return;}
+ state.gold-=cost;h.paid[i]++;save();renderCamp();openHeroDetails(id);
+}
+function setSkill(id,index){const h=heroById(id);if(!h||fight||index<0||index>3)return;h.active=index;save();renderCamp();openHeroDetails(id);}
+function upgradeSkill(id,index){const h=heroById(id);if(!h||fight||index<0||index>3)return;const lev=skillLevel(h,index),cost=COST[lev];if(lev>=3||paidCount(h)>=4||cost===undefined||state.gold<cost){toast('강화 조건을 확인하세요.');return;}state.gold-=cost;h.paid[index]++;save();renderCamp();}
+function refundSkill(id,index){const h=heroById(id);if(!h||fight||index<0||index>3||h.paid[index]<=0)return;const lev=skillLevel(h,index),cost=COST[lev-1]/2;if(state.gold<cost){toast('회수 비용이 부족합니다.');return;}state.gold-=cost;h.paid[index]--;save();renderCamp();openHeroDetails(id);}
+function askRelease(id){const h=heroById(id);if(!h||fight)return;if(state.roster.length<=1){toast('마지막 장수는 방출할 수 없습니다.');return;}openModal('장수 방출',`<p><strong>${h.name}</strong> 장수를 방출할까요?</p><p class="modal-note">이 장수의 초기 스킬 배분, 금화로 투자한 강화 포인트와 육성 기록이 모두 사라지며 복구할 수 없습니다.</p>`,`<button class="ghost" onclick="closeModal()">취소</button><button onclick="confirmRelease('${id}')">방출 확정</button>`);}
+function confirmRelease(id){if(!state||state.roster.length<=1)return;state.roster=state.roster.filter(h=>h.id!==id);if(tapDeployHeroId===id)tapDeployHeroId=null;focusHeroId=state.roster[0]?.id||null;focusSlot=null;save();closeModal();renderAll();toast('장수를 방출했습니다.');}
+function sampleThree(){const pool=shuffle(NAMES);return pool.slice(0,3);}
+function openRecruit(){if(!state?.recruitPending){toast('다음 전투 승리 후 활성화됩니다.');return;}if(!state.recruitChoices.length){state.recruitChoices=sampleThree();save();}const full=state.roster.length>=8;
+ openModal('재야탐색 · 3명 중 1명',`<p class="modal-note">승리할 때마다 한 번만 등용할 수 있습니다. 기존에 보유한 장수도 다시 등장할 수 있으며, 처음부터 무작위 3개 기술이 Lv.1입니다.</p><div class="modal-choices">${state.recruitChoices.map((name,i)=>{const d=HERO_STATS[name];return `<div class="recruit-card"><div class="hero-face" data-faction="${d.faction}">${HANJA[name]}</div><strong>${name}</strong><small>${FAC[d.faction]} · ${d.force>=d.intel?'무력':'지력'} ${Math.max(d.force,d.intel)}</small><div class="recruit-details">체력 ${d.hp} · 통솔 ${d.cmd}<br>${SHU_SKILLS[name]?'4개 전용 스킬':'4개 임시 공용 스킬'}</div><button class="accent" ${full?'disabled':''} onclick="chooseRecruit(${i})">등용</button></div>`;}).join('')}</div>${full?'<p class="modal-note">보유 장수가 8명입니다. 등용하려면 먼저 장수를 방출하세요.</p>':''}`,`<button class="ghost" onclick="closeModal()">나중에 선택</button><button class="ghost" onclick="skipRecruit()">이번 등용 포기</button>`);
+}
+function chooseRecruit(index){if(!state.recruitPending||state.roster.length>=8)return;const name=state.recruitChoices[index];if(!HERO_STATS[name])return;const h=newGeneral(name);state.roster.push(h);state.recruitPending=false;state.recruitChoices=[];focusHeroId=h.id;save();closeModal();switchTab('camp');toast(`${name} 등용 완료!`);}
+function skipRecruit(){if(!state.recruitPending)return;if(!confirm('이번 재야탐색 기회를 포기할까요?'))return;state.recruitPending=false;state.recruitChoices=[];save();closeModal();renderCamp();toast('이번 등용을 포기했습니다.');}
+function openModal(title,body,foot=''){modalCloseAllowed=true;$('modal-root').querySelector('.modal-box').classList.remove('hero-detail-modal');$('modal-title').textContent=title;$('modal-body').innerHTML=body;$('modal-footer').innerHTML=`<div class="modal-footer-actions">${foot}</div>`;$('modal-root').hidden=false;}
+function closeModal(){if(!modalCloseAllowed)return;$('modal-root').hidden=true;$('modal-body').innerHTML='';$('modal-root').querySelector('.modal-box').classList.remove('hero-detail-modal');}
+function showRules(){openModal('게임 규칙',`<div class="rules-list">15회 전투 · 기존 분기형 맵과 자동 공격을 유지하는 시제품입니다.<br>장수 등급은 없으며, 원본 기본 능력치를 사용합니다.<br>전투 승리마다 재야탐색 1회, 21명 중 무작위 3명을 제시하고 1명을 등용합니다.<br>보유 정원 8명, 출전 5명(손자병법 보유 시 6명), 전열 4칸·후열 4칸입니다.<br>장수는 4개 기술 중 하나를 지정해 자동 사용합니다.<br>초기 3개 기술에 1레벨씩 무작위 고정되며 회수할 수 없습니다.<br>유료 강화는 장수당 합계 4회, 기술당 Lv.3까지입니다. 비용은 2/4/8금입니다.<br>유료 강화 회수는 해당 단계 구매 가격의 절반을 금화로 지불합니다.<br>동일 이름 장수의 강화와 배치는 개별 저장되며 지원 효과는 서로 중첩됩니다.<br>위·오의 기술 56개는 아직 임시 기능이며, 촉 28개가 상세 설계본입니다.<br>진행 내용은 이 브라우저의 로컬 저장 공간에 자동 저장됩니다.</div>`,`<button class="accent" onclick="closeModal()">확인</button>`);}
+function resetRunPrompt(){if(fight){toast('전투 중에는 새 출정을 시작할 수 없습니다.');return;}if(!confirm('현재 출정을 종료하고 시작 화면으로 돌아갈까요? 저장한 출정은 삭제됩니다.'))return;state=null;focusHeroId=null;focusSlot=null;tapDeployHeroId=null;try{localStorage.removeItem(SAVE_KEY);}catch(e){}$('game-content').hidden=true;$('start-screen').hidden=false;showStartMenu();renderTop();}
+const EPISODE=(n)=>n<=5?'황건의 난':n<=10?'반동탁 연합':'군웅할거';
+const SIDE_NODES=['사건','보물','의원','상점'];
+function sideKind(round){return SIDE_NODES[(round-1)%SIDE_NODES.length];}
+function sideDone(round){return !!state?.optionalDone?.[round];}
+function canVisitSide(round){return !!state&&!state.win&&!state.lost&&state.round===round&&!sideDone(round)&&!fight;}
+function renderMap(){if(!state)return;const r=state.round;
+ $('map-route').innerHTML=Array.from({length:15},(_,idx)=>{const n=15-idx;const completed=n<r,active=n===r;const kind=sideKind(n);const optionalDone=sideDone(n);const reason=state.recruitPending?'먼저 재야탐색을 완료하거나 포기하세요.':'전투 준비 완료';
+ return `<div class="map-row"><button class="map-node optional ${optionalDone?'done':''} ${active&&!optionalDone?'current':''}" ${active&&!optionalDone&&!state.recruitPending&&!fight&&!state.lost?'':'disabled'} onclick="visitSide(${n})"><small>${kind==='사건'?'?':kind==='보물'?'◆':kind==='의원'?'✚':'▣'}</small><strong>${kind}</strong><small>${optionalDone?'방문 완료':active?'선택 경로':'옆길'}</small></button><button class="map-node ${completed?'done':active?'current':'locked'}" ${active&&!state.recruitPending&&!state.win&&!state.lost&&!fight?'':'disabled'} onclick="previewFight(${n})"><small>${n===15?'최종 전투':EPISODE(n)}</small><strong>${n}전 · ⚔ 전투</strong><small>${completed?'격파':active?reason:n>r?'미개방':'완료'}</small></button><div style="display:grid;place-items:center;color:${active?'#f2cd81':'#8694a7'};font-size:13px">${completed?'✓ 완료':active?'현재 위치':''}</div></div>`;}).join('');
+}
+function visitSide(round){if(!canVisitSide(round)){toast('지금은 방문할 수 없습니다.');return;}if(state.recruitPending){toast('먼저 재야탐색을 완료하세요.');return;}const type=sideKind(round);
+ if(type==='의원')openModal('의원',`<p>생존한 보유 장수의 체력을 최대 체력의 20%만큼 회복합니다. 전열과 후열에 배치하지 않은 장수도 대상입니다.</p>`,`<button class="ghost" onclick="closeModal()">돌아가기</button><button class="accent" onclick="applySide('heal')">무료 치료</button>`);
+ if(type==='사건')openModal('길 위의 사건',`<p>길을 걷던 중 상인을 도왔습니다. 작은 금낭을 감사의 표시로 받았습니다.</p><p class="modal-note">사건 보상: 금화 2개</p>`,`<button class="ghost" onclick="closeModal()">돌아가기</button><button class="accent" onclick="applySide('event')">보상 받기</button>`);
+ if(type==='보물'){const pool=['손자병법','청낭서','학우선','적로'];const available=pool.filter(t=>!state.treasures.includes(t));const choices=shuffle(available).slice(0,3);
+ openModal('보물 발견',`<p class="modal-note">세 가지 보물 중 하나를 선택하세요. 손자병법을 얻으면 출전 정원이 5명에서 6명으로 늘어납니다.</p><div class="modal-choices">${choices.map((t,i)=>`<button class="recruit-card" onclick="applySide('treasure','${t}')"><strong>${t}</strong><div class="recruit-details">${treasureDescription(t)}</div><span>획득</span></button>`).join('')}</div>`,`<button class="ghost" onclick="closeModal()">나중에 방문</button>`);}
+ if(type==='상점')openModal('행상인',`<p>장수를 판매하지 않는 물품 상점입니다.</p><p class="modal-note">보유 금화: ${state.gold}</p>`,`<button class="ghost" onclick="closeModal()">돌아가기</button><button ${state.gold<4?'disabled':''} onclick="applySide('shopHeal')">부상자 30% 회복 · 4금</button>`);
+}
+function treasureDescription(t){return ({'손자병법':'출전 장수 최대 6명','청낭서':'전투 후 생존 장수 체력 10% 회복','학우선':'아군 책략 피해 +5%','적로':'아군 회피 +5'})[t]||'보물';}
+function applySide(type,arg){if(!state||fight||state.recruitPending||sideDone(state.round))return;const round=state.round;
+ if(type==='heal'){state.roster.forEach(h=>{if(h.hp>0)h.hp=clamp(h.hp+HERO_STATS[h.name].hp*.2,0,HERO_STATS[h.name].hp);});toast('부상 장수 체력 회복');}
+ else if(type==='event'){state.gold+=2;toast('2금 획득');}
+ else if(type==='treasure'){if(!arg||state.treasures.includes(arg))return;state.treasures.push(arg);toast(`${arg} 획득`);}
+ else if(type==='shopHeal'){if(state.gold<4)return;state.gold-=4;state.roster.forEach(h=>{if(h.hp>0)h.hp=clamp(h.hp+HERO_STATS[h.name].hp*.3,0,HERO_STATS[h.name].hp);});toast('치료 완료');}
+ else return;
+ state.optionalDone[round]=true;save();closeModal();renderAll();}
+function previewFight(round){if(!state||fight||state.recruitPending||round!==state.round||state.lost||state.win)return;
+ const deployed=state.roster.filter(h=>h.slot!==null&&h.hp>0);if(!deployed.length){toast('출전 가능한 생존 장수를 배치하세요.');return;}
+ const names=(ENCOUNTERS[round]||[]).map(e=>e.name);openModal(`${round}전 · ${EPISODE(round)}`,`<p>적군 ${names.length}명: <strong>${names.join(', ')}</strong></p><p>출전 아군: ${deployed.length}명 / ${cap()}명</p><p class="modal-note">자동 전투입니다. 전투 중 공격 목표를 직접 지정하거나 장수의 스킬을 변경할 수 없습니다.</p>`,`<button class="ghost" onclick="closeModal()">편성 변경</button><button class="accent" onclick="startFight()">전투 시작</button>`);
+}
+function makeUnit(h,idx,enemy=false){if(enemy){return {id:`e${idx}`,name:h.name,enemy:true,slot:idx<4?idx:idx+0,role:h.skillName,cmd:h.cmd,force:h.force,intel:h.intel,pol:h.pol,maxHp:h.hp,hp:h.hp,cooldown:h.cooldown||8,skills:[h],active:0,level:0,
+   nextAttack:1+idx*.28,nextSkill:2.8+idx*.25,buffs:[],shield:0,stacks:{},castCount:0};}
+ const d=HERO_STATS[h.name];return {id:h.id,name:h.name,enemy:false,slot:h.slot,role:skillList(h.name)[h.active].name,cmd:d.cmd,force:d.force,intel:d.intel,pol:d.pol,maxHp:d.hp,hp:h.hp,cooldown:d.cooldown,
+  skills:skillList(h.name),active:h.active,level:skillLevel(h,h.active),nextAttack:1+idx*.26,nextSkill:2.0+idx*.22,buffs:[],shield:0,stacks:{},castCount:0};}
+function startFight(){if(!state||fight||state.recruitPending)return;const heroes=state.roster.filter(x=>x.slot!==null&&x.hp>0).sort((a,b)=>a.slot-b.slot);if(!heroes.length)return;
+ const foes=ENCOUNTERS[state.round];if(!foes||!foes.length){toast('전투 데이터가 없습니다.');return;}
+ closeModal();fightSpeed=1;skillSerial=0;fight={round:state.round,time:0,finished:false,result:null,actors:heroes.map((h,i)=>makeUnit(h,i)),foes:foes.map((e,i)=>makeUnit(e,i,true)),logs:[]};
+ $('speed-button').textContent='속도 ×1';$('tab-battle').disabled=false;switchTab('battle');$('battle-footer').innerHTML='';$('battle-title').textContent=`${state.round}전 · ${EPISODE(state.round)}`;
+ $('battle-status').textContent='자동 전투 진행 중';$('battle-description').textContent='전투 중에는 공격 대상을 지정할 수 없습니다.';
+ logBattle(`⚔ ${state.round}전 개전!`,true);drawFight();clearInterval(fightTimer);fightTimer=setInterval(tickFight,120);}
+function cycleSpeed(){if(!fight||fight.finished)return;fightSpeed=fightSpeed===1?2:fightSpeed===2?3:1;$('speed-button').textContent=`속도 ×${fightSpeed}`;}
+function living(team){return team.filter(u=>u.hp>0);}
+function lowHp(team){return living(team).slice().sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp)[0]||null;}
+function activeBuffs(unit,t){return unit.buffs.filter(b=>b.until>t);}
+function buffSum(u,key){return activeBuffs(u,fight.time).reduce((v,b)=>v+(b.key===key?b.value:0),0);}
+function addBuff(u,key,value,duration,source){if(!u)return;const sk=source+':'+key;u.buffs=u.buffs.filter(b=>b.source!==sk);u.buffs.push({key,value,until:fight.time+duration,source:sk});}
+function addShield(u,pct,duration,source){if(!u)return;const value=u.maxHp*pct/100;u.shield+=value;u.buffs.push({key:'shield',value,until:fight.time+duration,source:source+':shield:'+ (++skillSerial)});}
+function syncShield(u){const alive=activeBuffs(u,fight.time).filter(b=>b.key==='shield');u.shield=Math.max(0,alive.reduce((a,b)=>a+b.value,0));}
+function heal(u,v){if(!u||u.hp<=0||!Number.isFinite(v)||v<=0||fight&&activeBuffs(u,fight.time).some(b=>b.key==='noHeal'))return 0;const before=u.hp;u.hp=clamp(u.hp+v,0,u.maxHp);return u.hp-before;}
+function sourceId(actor,sk){return actor.id+':'+sk.id;}
+function hitTargets(actor,foes,mode='one'){const alive=living(foes);if(!alive.length)return[];if(mode==='all')return alive;if(mode==='front'){const front=alive.filter(u=>u.slot<4);return front.length?front:alive;}
+ const front=alive.filter(u=>u.slot<4),pool=front.length?front:alive;return [pool[rand(pool.length)]];}
+function physicalBase(a,d,pierce=0){return Math.max(7,12+a.force*.27-d.cmd*.09*(1-pierce/100));}
+function magicBase(a,d){return Math.max(7,12+a.intel*.26-d.pol*.08);}
+function attackMod(a,kind){const up=buffSum(a,'damageUp');const phy=(kind==='physical'?1:1);let bonus=up-buffSum(a,'damageDown');if(!a.enemy&&kind==='strategy'&&state.treasures.includes('학우선'))bonus+=5;return Math.max(.15,phy*(1+bonus/100));}
+function chanceHit(a,d,bonus=0){return clamp(.96+(a.hit||0)/100-(d.dodge||0)/100 +bonus/100 + buffSum(a,'accuracyUp')/100-buffSum(a,'accuracyDown')/100-buffSum(d,'dodgeUp')/100 - (!d.enemy&&state.treasures.includes('적로')?.05:0),.1,1);}
+function damage(a,d,mult=100,kind='physical',mods={}){if(!a||!d||a.hp<=0||d.hp<=0)return 0;if(Math.random()>chanceHit(a,d,mods.hitBonus||0)){if(rand(5)===0)logBattle(`${d.name} 회피`);return 0;}
+ let amt=(kind==='strategy'?magicBase(a,d):physicalBase(a,d,mods.pierce||0))*mult/100;
+ amt*=attackMod(a,kind)*(1+buffSum(d,'vulnerable')/100)*(1-buffSum(d,'reduce')/100);
+ if(!a.enemy&&mods.first)amt*=(1+(mods.first||0)/100);
+ if(mods.bonus)amt*=(1+mods.bonus/100);
+ if(mods.execute&&d.hp/d.maxHp<=.5)amt*=1.15;
+ if(mods.after10&&fight.time>=10)amt*=1.3;
+ amt=Math.max(1,Math.round(amt));
+ // 조운의 일신시담: 보호자 자신의 피격과 피해 이양을 실제로 처리한다.
+ const guards=activeBuffs(d,fight.time).filter(b=>b.key==='guard'&&b.value?.protector!==d.id);
+ for(const g of guards){const protector=[...fight.actors,...fight.foes].find(u=>u.id===g.value.protector&&u.hp>0&&u.enemy===d.enemy);if(!protector)continue;let redirected=Math.round(amt*g.value.rate/100);if(redirected<=0)continue;amt-=redirected;rawDamage(protector,redirected,true);}
+ return rawDamage(d,amt,false);
+}
+function rawDamage(d,amount,isGuard){const original=Math.max(0,Math.round(amount));let remain=original;const shields=activeBuffs(d,fight.time).filter(b=>b.key==='shield');for(const b of shields){if(remain<=0)break;const used=Math.min(remain,b.value);b.value-=used;remain-=used;}let effective=Math.max(0,remain);if(isGuard)effective*=Math.max(.1,1-buffSum(d,'reduce')/100);const before=d.hp;d.hp=clamp(d.hp-effective,0,d.maxHp);syncShield(d);return before-d.hp;}
+function allAdd(team,key,value,duration,source){living(team).forEach(x=>addBuff(x,key,value,duration,source));}
+function skillAction(actor,allies,foes){const skill=actor.skills[actor.active],level=actor.level,v=VAL(skill.vals,level),src=sourceId(actor,skill),name=skill.name;const own=living(allies),others=living(foes);if(!own.length||!others.length)return;
+ let targets=[];const single=(kind='physical',mult=v,mods={})=>{targets=hitTargets(actor,foes);if(targets[0])damage(actor,targets[0],mult,kind,mods);};
+ switch(skill.id){
+ case 'liu_bond':allAdd(allies,'damageUp',v,5,src);for(const x of own)if(x.name==='관우'||x.name==='장비')addBuff(x,'reduce',4,5,src);break;
+ case 'liu_care':for(const x of own){addShield(x,v,5,src);addBuff(x,'regen',VAL(skill.regen,level),3,src);}break;
+ case 'liu_visit':{const target=own.slice().sort((a,b)=>b.intel-a.intel)[0];if(target)target.nextSkill=Math.max(fight.time+.05,target.nextSkill-v);break;}
+ case 'liu_last':allAdd(allies,'reduce',v*(own.length<=2?2:1),5,src);break;
+ case 'guan_strike':single('physical',v,{first:actor.castCount===1?20:0});break;
+ case 'guan_guard':{const low=lowHp(allies);addShield(actor,v,5,src);if(low&&low!==actor)addShield(low,v,5,src);break;}
+ case 'guan_flood':targets=hitTargets(actor,foes,'front');for(const x of targets){damage(actor,x,v);addBuff(x,'speedDown',VAL(skill.slow,level),4,src);}break;
+ case 'guan_chain':{const st=actor.stacks[skill.id]||0;single('physical',v,{bonus:st*VAL(skill.stack,level)});actor.stacks[skill.id]=Math.min(3,st+1);break;}
+ case 'zhang_aoe':targets=hitTargets(actor,foes,'all');targets.forEach(x=>damage(actor,x,v));break;
+ case 'zhang_roar':allAdd(foes,'speedDown',v,4,src);break;
+ case 'zhang_yan':targets=hitTargets(actor,foes);if(targets[0]){damage(actor,targets[0],v);addBuff(targets[0],'damageDown',VAL(skill.weaken,level),4,src);}break;
+ case 'zhang_rage':addBuff(actor,'damageUp',v*(actor.hp/actor.maxHp<=.5?2:1),5,src);break;
+ case 'zhao_save':addShield(lowHp(allies),v,5,src);break;
+ case 'zhao_dodge':single('physical',v);addBuff(actor,'dodgeUp',VAL(skill.dodge,level),4,src);break;
+ case 'zhao_feint':allAdd(foes,'accuracyDown',v,4,src);break;
+ case 'zhao_guard':{const target=own.filter(x=>x!==actor).sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp)[0];if(target)addBuff(target,'guard',{protector:actor.id,rate:v},5,src);addBuff(actor,'reduce',8,5,src);break;}
+ case 'zhuge_array':for(const x of own){if(x.slot<4)addBuff(x,'reduce',v,5,src);else addBuff(x,'speedUp',VAL(skill.rearSpeed,level),5,src);}break;
+ case 'zhuge_plan':allAdd(foes,'vulnerable',v,4,src);break;
+ case 'zhuge_bolts':targets=hitTargets(actor,foes);if(targets[0])for(let i=0;i<3;i++)damage(actor,targets[0],v,'strategy');break;
+ case 'zhuge_supply':for(const x of own.slice().sort((a,b)=>a.hp/a.maxHp-b.hp/b.maxHp).slice(0,2))addBuff(x,'regen',v,4,src);break;
+ case 'ma_charge':single('physical',v,{first:actor.castCount===1?VAL(skill.first,level):0});break;
+ case 'ma_assault':addBuff(actor,'damageUp',v,5,src);addBuff(actor,'vulnerable',5,5,src);break;
+ case 'ma_cavalry':for(const x of own)addBuff(x,'speedUp',v+(x.slot<4?3:0),4,src);break;
+ case 'ma_recover':single('physical',v);if(actor.hp/actor.maxHp<=.6)heal(actor,actor.maxHp*VAL(skill.heal,level)/100);break;
+ case 'huang_finish':single('physical',v,{execute:true});break;
+ case 'huang_aim':single('physical',v,{hitBonus:VAL(skill.hit,level),pierce:VAL(skill.pierce,level)});break;
+ case 'huang_old':single('physical',v,{after10:true});break;
+ case 'huang_cheer':for(const x of own.slice().sort((a,b)=>b.force-a.force).slice(0,2))addBuff(x,'damageUp',v,4,src);break;
+ case 'tmp_strike':single('physical',v);break;
+ case 'tmp_defend':addShield(actor,v,5,src);{const low=lowHp(allies);if(low!==actor)addShield(low,v,5,src);}break;
+ case 'tmp_tactic':targets=hitTargets(actor,foes,'all');targets.forEach(x=>damage(actor,x,v,'strategy'));break;
+ case 'tmp_help':heal(lowHp(allies),lowHp(allies)?.maxHp*v/100);break;
+ default:break;
+ }
+ logBattle(`${actor.name} [${name} Lv.${level}] 사용`,!actor.enemy);
+}
+function enemySkill(actor,allies,foes){const s=actor.skills[0];const mode=(s.skillRange||'').toLowerCase();const support=mode.startsWith('ally')||s.skillPower<=0;
+ if(support){const target=lowHp(allies);if(target)heal(target,target.maxHp*.10);logBattle(`${actor.name} [${s.skillName}] 지원`,false);return;}
+ const targets=hitTargets(actor,foes,mode==='enemy_all'?'all':mode==='front_all'?'front':'one');let total=0;
+ for(const target of targets){const hits=clamp(s.skillHits||1,1,3);for(let i=0;i<hits;i++)total+=damage(actor,target,clamp(s.skillPower||30,12,190),s.skillType==='책략'?'strategy':'physical');
+ for(const eff of s.effects||[]){if(eff.type==='stat'&&eff.stat==='cmd'&&eff.delta<0)addBuff(target,'vulnerable',5,Math.max(1,eff.duration||4),'enemy:'+actor.id+':'+s.skillName);
+ if(eff.type==='no_heal')addBuff(target,'noHeal',1,10,'enemy:'+actor.id+':'+s.skillName);}}
+ logBattle(`${actor.name} [${s.skillName}] 피해 ${Math.round(total)}`,false);
+}
+function makeAction(actor,allies,foes){if(!living(foes).length||actor.hp<=0)return;
+ if(fight.time>=actor.nextSkill){actor.castCount++;if(actor.enemy)enemySkill(actor,allies,foes);else skillAction(actor,allies,foes);
+ const cd=actor.enemy?Math.max(4.7,actor.cooldown*.86):actor.skills[actor.active].cd;
+ actor.nextSkill=fight.time+cd;}
+ if(actor.hp<=0||!living(foes).length)return;
+ if(fight.time>=actor.nextAttack){const t=hitTargets(actor,foes)[0];if(t){const dmg=damage(actor,t,100,actor.intel>=actor.force+25?'strategy':'physical');if(dmg>0&&rand(12)===0)logBattle(`${actor.name} 일반 공격 ${Math.round(dmg)}`,!actor.enemy);}
+ const up=buffSum(actor,'speedUp'),down=buffSum(actor,'speedDown');const interval=Math.max(1.1,actor.cooldown/(1+up/100)*(1+down/100));actor.nextAttack=fight.time+interval;}
+}
+function tickFight(){if(!fight||fight.finished)return;const dt=.17*fightSpeed;fight.time+=dt;
+ for(const u of [...fight.actors,...fight.foes]){if(u.hp<=0)continue;const regen=buffSum(u,'regen');if(regen>0&&!activeBuffs(u,fight.time).some(x=>x.key==='noHeal'))heal(u,u.maxHp*regen*dt/100);u.buffs=u.buffs.filter(b=>b.until>fight.time);syncShield(u);}
+ // 동작 순서를 고정하되, 전투가 끝난 뒤 후속 공격을 막는다.
+ for(const u of [...fight.actors,...fight.foes]){if(u.hp<=0)continue;const allies=u.enemy?fight.foes:fight.actors,foes=u.enemy?fight.actors:fight.foes;makeAction(u,allies,foes);if(!living(fight.actors).length||!living(fight.foes).length)break;}
+ drawFight();if(!living(fight.foes).length)finishFight(true);else if(!living(fight.actors).length||fight.time>=45)finishFight(false);
+}
+function logBattle(msg,good){if(!fight)return;fight.logs.unshift({msg,good});fight.logs=fight.logs.slice(0,60);$('battle-log').innerHTML=fight.logs.slice(0,30).map(v=>`<div class="log-line ${v.good?'good':'bad'}">${v.msg}</div>`).join('');}
+function drawFight(){if(!fight)return;const fmt=u=>`<div class="battle-unit ${u.enemy?'enemy':''} ${u.hp<=0?'dead':''}"><div class="name">${u.name}</div><div class="role">${u.role}</div><div class="bar"><span style="width:${clamp(100*u.hp/u.maxHp,0,100)}%"></span></div><div class="hp">${Math.ceil(u.hp)} / ${u.maxHp}${u.shield>0?` · 보호막 ${Math.round(u.shield)}`:''}</div></div>`;
+ $('battle-player').innerHTML=fight.actors.map(fmt).join('');$('battle-enemy').innerHTML=fight.foes.map(fmt).join('');$('battle-clock').textContent=`${String(Math.floor(fight.time/60)).padStart(2,'0')}:${String(Math.floor(fight.time%60)).padStart(2,'0')}`;
+ $('ally-count').textContent=`${living(fight.actors).length} / ${fight.actors.length}`;$('enemy-count').textContent=`${living(fight.foes).length} / ${fight.foes.length}`;
+}
+function finishFight(won){if(!fight||fight.finished)return;fight.finished=true;fight.result=won?'win':'lose';clearInterval(fightTimer);fightTimer=null;
+ // 개체별 남은 체력은 전투 종료 후에도 이어진다.
+ for(const u of fight.actors){const h=heroById(u.id);if(h)h.hp=clamp(u.hp,0,HERO_STATS[h.name].hp);}
+ if(won){let goldGain=5+(fight.round%5===0?2:0);state.gold+=goldGain;state.round++;state.recruitPending=true;state.recruitChoices=sampleThree();if(state.treasures.includes('청낭서'))for(const h of state.roster)if(h.hp>0)h.hp=clamp(h.hp+HERO_STATS[h.name].hp*.1,0,HERO_STATS[h.name].hp);
+ if(state.round>15)state.win=true;logBattle(`승리! ${goldGain}금 획득 · 재야탐색 1회 활성화`,true);$('battle-status').textContent='전투 승리';}
+ else{state.lost=true;logBattle('패배 · 출정 종료',false);$('battle-status').textContent='출정 실패';}
+ save();renderTop();$('battle-footer').innerHTML=`<div><h2>${won?(state.win?'15전 완주!':'승리!'):'패배'}</h2><p>${won?'금화를 획득했습니다. 장수 편성 화면에서 재야탐색 1회를 진행할 수 있습니다.':'다음 출정을 시작해 다른 조합으로 도전할 수 있습니다.'}</p><button class="accent" onclick="returnFromFight()">${won?'장수 편성으로':'결과 확인 및 귀환'}</button></div>`;
+}
+function returnFromFight(){if(!fight?.finished)return;const lost=state.lost,won=state.win;fight=null;clearInterval(fightTimer);$('tab-battle').disabled=true;switchTab('camp');renderAll();if(lost)openModal('출정 실패',`<p>${Math.min(state.round,15)}전에서 패배했습니다. 장수 배치와 기술을 살펴본 뒤 새 출정을 시작할 수 있습니다.</p>`,`<button class="ghost" onclick="closeModal()">편성 확인</button><button class="accent" onclick="closeModal();resetRunPrompt()">새 출정</button>`);
+ else if(won)toast('15라운드 완주! 재야탐색 기회는 남아 있습니다.');else toast('재야탐색 1회가 활성화되었습니다.');}
+// 개발 검증용 순수 계산 진입점: 테스트에서는 이 함수를 사용하여 플레이 화면 없이 강화/중첩을 확인한다.
+const PrototypeTests={
+ baseSlots(){return [0,1,2,3,4,5,6,7];},
+ costAt(level){return COST[level]??null;},
+ refundAt(level){return COST[level-1]===undefined?null:COST[level-1]/2;},
+ stackCheck(){return SHU_SKILLS['유비'][0].id==='liu_bond'&&sourceId({id:'h1'},SHU_SKILLS['유비'][0])!==sourceId({id:'h2'},SHU_SKILLS['유비'][0]);}
+};
+(function boot(){showStartMenu();window.addEventListener('beforeunload',()=>{if(state&&!fight)save();});})();
+
+</script></body></html>

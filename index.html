@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111b2a"><title>삼국지 군웅전기 · 15전 시제품</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="topbar"><div class="brand"><span class="brand-mark">三國</span><div><strong>군웅전기</strong><small class="blank-label" id="brand-subtitle">&nbsp;</small></div></div><div class="topstats" id="topstats"></div></header>
+<main>
+<section id="start-screen" class="start-screen">
+  <div class="start-box start-menu" id="start-menu">
+    <button class="accent start-action" onclick="showFactionSelection()">새로하기</button>
+    <button class="ghost start-action" id="continue-button" onclick="continueRun()" disabled>이어하기</button>
+  </div>
+  <div class="start-box faction-menu" id="faction-menu" hidden>
+    <h2>진영 선택</h2>
+    <div class="faction-choices">
+      <button class="faction-choice shu" onclick="beginRun('shu')"><span>蜀</span><strong>촉</strong></button>
+      <button class="faction-choice wei" onclick="beginRun('wei')"><span>魏</span><strong>위</strong></button>
+      <button class="faction-choice wu" onclick="beginRun('wu')"><span>吳</span><strong>오</strong></button>
+    </div>
+    <button class="ghost faction-back" onclick="showStartMenu()">뒤로</button>
+  </div>
+</section>
+<section id="game-content" hidden>
+ <nav class="mainnav"><button id="tab-camp" onclick="switchTab('camp')">장수 편성</button><button id="tab-map" onclick="switchTab('map')">출정 지도</button><button id="tab-battle" onclick="switchTab('battle')" disabled>자동 전투</button></nav>
+ <div id="camp-page" class="page">
+   <div class="page-title compact"><div><h2>장수 편성</h2></div><div class="flex-actions"><button class="accent" id="recruit-btn" onclick="openRecruit()">재야탐색</button><button class="ghost" onclick="switchTab('map')">지도로 이동 →</button></div></div>
+   <div class="camp-layout"><section class="panel formation-panel"><div class="panel-head"><h3>전투 진형</h3><span id="deploy-counter">0 / 5명</span></div><div class="lane-label">전열</div><div class="formation-grid" id="front-slots"></div><div class="lane-label rear">후열</div><div class="formation-grid" id="rear-slots"></div><div class="hint panel-foot" id="formation-hint"></div></section>
+   <section class="panel roster-panel"><div class="panel-head"><h3>보유 장수</h3><span id="roster-counter">0 / 8명</span></div><div id="roster-grid" class="roster-grid"></div></section></div>
+   <div class="camp-bottom"><div class="treasures"><strong>보유 보물</strong><div id="treasure-pills"></div></div><button class="ghost" onclick="resetRunPrompt()">새 출정 시작</button></div>
+ </div>
+ <div id="map-page" class="page" hidden><div class="page-title"><div><span class="eyebrow">CAMPAIGN</span><h2>출정 지도</h2><p>전투를 진행하면 다음 단계가 열립니다. 옆길의 사건·보물·의원·상점은 선택적으로 방문할 수 있습니다.</p></div><button class="ghost" onclick="switchTab('camp')">← 편성으로</button></div><div id="map-route" class="map-route"></div></div>
+ <div id="battle-page" class="page" hidden><div class="page-title"><div><span class="eyebrow">AUTO BATTLE</span><h2 id="battle-title">전투</h2><p id="battle-description">기술은 자동으로 발동합니다. 직접 공격 대상을 선택할 수 없습니다.</p></div><div class="flex-actions"><button id="speed-button" class="ghost" onclick="cycleSpeed()">속도 ×1</button></div></div><div class="panel battle-panel"><div class="battle-heading enemy-text">적군 <span id="enemy-count"></span></div><div id="battle-enemy" class="battle-units"></div><div class="battle-center"><span id="battle-clock">00:00</span><strong id="battle-status">자동 전투</strong></div><div id="battle-player" class="battle-units"></div><div class="battle-heading">아군 <span id="ally-count"></span></div></div><div class="panel battle-log"><h3>전투 기록</h3><div id="battle-log"></div></div><div id="battle-footer"></div></div>
+</section>
+</main>
+<div id="modal-root" class="modal-root" hidden><div class="modal-shade" onclick="closeModal()"></div><section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-top"><h2 id="modal-title"></h2><button class="icon-button" aria-label="닫기" onclick="closeModal()">✕</button></div><div id="modal-body"></div><div id="modal-footer"></div></section></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="data.js"></script><script src="app.js"></script></body></html>
